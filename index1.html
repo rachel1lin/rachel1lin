@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title> Rachel Lin </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+
+	<body>
+  <div class="home">
+      <div class = "row">
+        <div class="menu">
+          <div class = "col-sm-6">
+            <a id = "my-name" href = "index.html"> Rachel Lin </a>
+          </div>
+          <div class = "col-sm-6">
+            <div class = "my-pages">
+              <a id = "page" href = "index1.html"> UI/UX </a>
+              <a id = "page" href = "about.html"> About </a>
+              <a id = "page" href = "https://drive.google.com/file/d/1lzn1uHrBSMEXKEiPmymv4TRRRkampUdg/view?usp=sharing"> Resume </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class = "col-sm-6">
+        <div class ="filter-container">
+        <div class = "filter-fun">
+          <div class= "filter-dropdown">
+            <button onclick="myFunction()" class="dropbtn"> Choose a filter
+            </button>
+              <div id="myDropdown" class="dropdown-content">
+                <button class="btn active" onclick="filterSelection('all')">Show All</a>
+                <button class="btn" onclick="filterSelection('web')">Web</a>
+                <button class="btn" onclick="filterSelection('mobile')">Mobile</a>
+                <button class="btn" onclick="filterSelection('research')">Research</a>
+                <button class="btn" onclick="filterSelection('ideation')">Ideation</a>
+                <button class="btn" onclick="filterSelection('prototyping')">Prototyping</a>
+                <button class="btn" onclick="filterSelection('visual')">Visual</a>
+                <button class="btn" onclick="filterSelection('usertesting')">User testing</a>
+                <button class="btn" onclick="filterSelection('binnovation')">Design consulting (BI)</a>
+                <button class="btn" onclick="filterSelection('internship')">Internship</a>
+                </div></div>
+                <div class="filter-elements">
+                  <div class="filterDiv research ideation prototyping visual mobile internship cisco">
+                    <a href="cisco.html">Cisco</a>
+                    <div class="element">RESEARCH + IDEATION + PROTOTYPING + VISUAL /// MOBILE</div>
+                  </div>
+                  <div class="filterDiv research ideation mobile binnovation suzuki">
+                    <a href="suzuki.html">Suzuki x BI</a>
+                    <div class="element">RESEARCH + IDEATION /// MOBILE</div></div>
+                  <div class="filterDiv visual web internship cash1">
+                    <a href="cashbot1.html">Cashbot.ai Creator Experience</a>
+                    <div class="element">VISUAL /// WEB</div></div>
+                  <div class="filterDiv visual usertesting web internship cash2">
+                    <a href="cashbot2.html">Cashbot.ai Landing Page</a>
+                    <div class="element">VISUAL + USER TESTING /// WEB</div></div>
+                  <div class="filterDiv research ideation mobile binnovation playfit1">
+                    <a href="playfit1.html">Playfit x BI pt.1</a>
+                    <div class="element">RESEARCH + IDEATION /// MOBILE</div></div>
+                  <div class="filterDiv ideation prototyping usertesting mobile binnovation playfit2">
+                    <a href="playfit2.html">Playfit x BI pt.2</a>
+                    <div class="element"> IDEATION + PROTOTYPING + USER TESTING /// MOBILE</div></div>
+                  </div>
+                </div></div></div>
+            <div class="idk col-sm-6">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+
+                <script>
+                filterSelection("all")
+                function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("filterDiv");
+                if (c == "all") c = "";
+                // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+                for (i = 0; i < x.length; i++) {
+                  w3RemoveClass(x[i], "show");
+                  if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                }
+                }
+
+                // Show filtered elements
+                function w3AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                  if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                  }
+                }
+                }
+
+                // Hide elements that are not selected
+                function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                  while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                  }
+                }
+                element.className = arr1.join(" ");
+                }
+
+                // Add active class to the current control button (highlight it)
+                var btnContainer = document.getElementById("myDropdown");
+                var btns = btnContainer.getElementsByClassName("btn");
+                for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                  var current = document.getElementsByClassName("active");
+                  current[0].className = current[0].className.replace(" active", "");
+                  this.className += " active";
+                });
+                }
+
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                // Close the dropdown menu if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                          openDropdown.classList.remove('show');
+                          }
+                        }
+                      }
+                    }
+                </script>
+
+
+
+
+
+
+
+
+	</body>
+</html>

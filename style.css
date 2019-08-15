@@ -1,0 +1,307 @@
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.menu {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  max-height: 40px;
+  width: 100%;
+  background-color: #FFFFFF;
+  z-index: 1;
+}
+
+#my-name {
+  font-size: 30px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  min-width: 100px;
+}
+
+#page {
+  color: #000000;
+  font-size: 100%;
+  font-weight: 500;
+  text-decoration: none;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.my-pages {
+  float: right;
+  padding-top: 10px;
+}
+
+
+.filter-container {
+  padding-top: 20px;
+}
+
+.filter-fun {
+  padding-left: 100px;
+  padding-bottom: 40px;
+  padding-top: 10px;
+}
+
+.filter-elements {
+  overflow: hidden;
+  padding-left: 15px;
+}
+
+.filterDiv {
+  color: #000000;
+  width: 370px;
+  text-align: left;
+  margin: 2px;
+  display: none; /* Hidden by default */
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+a {
+  color: #000000;
+}
+
+.element {
+  font-size: 12px;
+  font-weight: 400;
+  color: #A0A0A0;
+  padding-top: 5px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: left;
+  background-color:
+}
+
+.btn:focus, .btn:active, .btn.active{
+  border: none;
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Bold text for the active button */
+.btn.active {
+  font-weight: 700;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #FFFFFF;
+  color: #4D4D4D;
+  font-weight: 400;
+  text-align: left;
+  border-radius: 30px;
+  padding: 14px 20px;
+  width: 370px;
+  font-size: 16px;
+  border: solid #000000 1px;
+  cursor: pointer;
+}
+
+.dropbtn:focus {
+  outline: none;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.filter-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 70% auto;
+  z-index: 1;
+  border: 1px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+}
+
+.filterDiv:hover{
+  -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -ms-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+}
+
+.cisco:hover a{
+  color: #5EA2B6
+}
+
+.suzuki:hover a{
+  color: #D82454
+}
+
+.cash1:hover a{
+  color: #72ABF9
+}
+
+.cash2:hover a{
+  color: #F5B642
+}
+
+.playfit1:hover a{
+  color: #64CA65
+}
+
+.playfit2:hover a{
+  color: #1787FB;
+}
+
+h1, h2{
+  display: inline;
+}
+
+h1 {
+  font-size: 36px;
+  }
+
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #6D6D6D;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 300;
+  }
+
+h5 {
+    font-size: 12px;
+    font-weight: 300;
+    color: #6D6D6D;
+    line-height: 30px;
+  }
+
+.page-container {
+  padding-top: 100px;
+  line-height: 30px;
+}
+
+.case-container {
+  padding-right: 30px;
+}
+.case {
+  font-weight: 300;
+}
+
+.photos img {
+  padding-bottom: 20px;
+  padding-right: 20px;
+  float: left;
+  max-width: 250px;
+}
+
+.tools, .collaborators {
+  padding-top: 50px;
+  font-weight: 300;
+}
+
+.collaborators {
+  float:left;
+}
+
+.case-container img {
+ margin: auto;
+ max-width: 90%;
+ padding-top: 20px;
+ padding-bottom: 40px;
+}
+
+.cash-photos img {
+  max-width: 280px;
+  padding-right: 20px;
+}
+
+.cashbot-pics img {
+  max-width: 350px;
+  padding-top: 30px;
+}
+
+.suzuki-button {
+  background-color: #FFFFFF;
+  border: 3px black solid;
+  border-radius: 28px;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.bio {
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 70px;
+
+}
+
+.bio a{
+  font-weight: 500;
+}
+
+.bio a:hover{
+  font-weight: 800;
+  color: #B77377;
+}
+
+
+
+.my-pic img {
+  max-width: 500px;
+  padding-right: 100px;
+  float:right;
+}
