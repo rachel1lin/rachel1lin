@@ -218,10 +218,11 @@ h4 {
   }
 
 h5 {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     color: #6D6D6D;
     line-height: 30px;
+    padding-right: 60px;
   }
 
 .page-container {
@@ -284,7 +285,6 @@ h5 {
 
 .bio {
   padding-left: 90px;
-  padding-right: 10px;
   padding-bottom: 70px;
 
 }
@@ -301,8 +301,8 @@ h5 {
 
 
 .my-pic img {
-  max-width: 400px;
-  padding-left: 80px;
+  max-width: 500px;
+  padding-right: 80px;
   padding-bottom: 80px;
-  float:left;
+  float:right;
 }
