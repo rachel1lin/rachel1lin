@@ -169,27 +169,40 @@ a {
 }
 
 .cisco:hover a{
-  color: #5EA2B6
+  color: #5EA2B6;
+  font-weight: 900;
+  font-size: 30px;
 }
 
 .suzuki:hover a{
-  color: #D82454
+  color: #D82454;
+  font-weight: 900;
+  font-size: 30px;
 }
 
 .cash1:hover a{
-  color: #72ABF9
+  color: #72ABF9;
+  font-weight: 900;
+  font-size: 30px;
 }
 
 .cash2:hover a{
-  color: #F5B642
+  color: #F5B642;
+  font-weight: 900;
+  font-size: 30px;
+
 }
 
 .playfit1:hover a{
-  color: #64CA65
+  color: #64CA65;
+  font-weight: 900;
+  font-size: 30px;
 }
 
 .playfit2:hover a{
   color: #1787FB;
+  font-weight: 900;
+  font-size: 30px;
 }
 
 h1, h2{
@@ -305,4 +318,10 @@ h5 {
   padding-right: 80px;
   padding-bottom: 80px;
   float:right;
+}
+
+.noodle img{
+  max-width: 200px;
+
+  padding-top: 400px;
 }
