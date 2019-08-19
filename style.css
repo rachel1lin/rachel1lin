@@ -248,7 +248,15 @@ h5 {
 }
 
 
-.case {
+.case-container img{
+  max-width: 160px;
+
+}
+
+.case img{
+  max-width: 90%;
+  padding-bottom: 30px;
+  padding-top: 20px;
 }
 
 .photos img {
@@ -318,6 +326,7 @@ h5 {
   color: #B77377;
 }
 
+/* also centers other things lol */
 .about-container {
   display: flex;
   flex-direction: column;
@@ -325,6 +334,7 @@ h5 {
   align-items: center;
 
 }
+
 
 
 .my-pic img {
