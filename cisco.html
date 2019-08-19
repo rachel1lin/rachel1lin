@@ -14,6 +14,12 @@
   </head>
 
 	<body>
+    <div class="header">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+
     <div class="container">
       <div class = "row">
         <div class="menu">
@@ -106,7 +112,7 @@
             the suggested resources. My team wanted to further drive engagement after a video was watched in order for
             the app to bring more value to the user. Thus, I added the "Suggested Resources" section, so that the user
             experience could cascade through more and more resources. This demo includes the experience of scheduling another
-            webinar.
+            webinar.<br>
 
             <img src="schedule.gif"><br>
 
@@ -115,14 +121,14 @@
             I originally designed a drag-and-drop list to help users sort their priorities because users said they
             valued customizability in a mobile app, but this design would limit the amount of content that could be displayed.
             I decided to switch customizability for cleanliness and employed the Star filter, inspired by the Twitter and Gmail mobile apps.
-            This method works well with a larger number of notifications and content can be more efficiently sorted with the Starred tab.
+            This method works well with a larger number of notifications and content can be more efficiently sorted with the Starred tab. <br>
 
             <img src="highlights.gif"><br>
 
             Coming back to the original story, Ned needs to go to the network site to set up his product.
             He uses his computer to pull up the command line interface but needs the instructions. Luckily, he carries his phone with him wherever he goes.
             He goes through the mobile app again to the Lifecycle page, where he finds the relevant PDF for setting up his product, as demo'd below.
-            Ned successfully uses his phone and computer in parallel to efficiently and correctly set up his network hardware.
+            Ned successfully uses his phone and computer in parallel to efficiently and correctly set up his network hardware.<br>
 
             <img src="lifecycle.gif"><br>
 
@@ -163,6 +169,17 @@
   </div>
 </div>
 
+<script>
+      // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {myFunction()};
+
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+  </script>
 
 
 
