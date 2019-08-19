@@ -10,6 +10,8 @@ body {
   width: 100%;
   background-color: #FFFFFF;
   z-index: 1;
+  display: flex;
+  justify-content: center;
 }
 
 #my-name {
@@ -30,7 +32,7 @@ body {
 }
 
 .my-pages {
-  float: right;
+  text-align: center;
   padding-top: 10px;
 }
 
@@ -240,15 +242,13 @@ h5 {
   }
 
 .page-container {
-  padding-top: 100px;
+  padding-top: 80px;
   line-height: 30px;
+  width: 100%;
 }
 
-.case-container {
-  padding-right: 30px;
-}
+
 .case {
-  font-weight: 300;
 }
 
 .photos img {
@@ -267,12 +267,7 @@ h5 {
   float:left;
 }
 
-.case-container img {
- margin: auto;
- max-width: 90%;
- padding-top: 20px;
- padding-bottom: 40px;
-}
+
 
 .cash-photos img {
   max-width: 280px;
@@ -298,8 +293,18 @@ h5 {
 }
 
 .bio {
-  padding-left: 90px;
-  padding-bottom: 70px;
+  padding-left: 10px;
+  padding-right: 30px;
+  margin-right: 80px;
+  padding-bottom: 50px;
+  font-weight: 300;
+
+}
+
+.review {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 60px;
 
 }
 
@@ -308,21 +313,31 @@ h5 {
 }
 
 .bio a:hover{
-  font-weight: 800;
+  font-weight: 900;
+  font-size: 16px;
   color: #B77377;
 }
 
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
 
 
 .my-pic img {
-  max-width: 500px;
-  padding-right: 80px;
-  padding-bottom: 80px;
-  float:right;
+  max-width: 400px;
+  padding-bottom: 30px;
+
+
 }
 
-.noodle img{
-  max-width: 200px;
+.logos img{
+  width: 45px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 
-  padding-top: 400px;
+
 }
