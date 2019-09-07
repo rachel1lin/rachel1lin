@@ -19,12 +19,13 @@ body {
   font-weight: 500;
   color: #000000;
   text-decoration: none;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 @media screen and (min-width: 601px) {
   #my-name {
     font-size: 36px;
+    padding-left: 20px;
   }
 }
 
@@ -50,19 +51,38 @@ body {
   color: #000000;
   font-weight: 500;
   text-decoration: none;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .my-pages {
   padding-top: 10px;
   margin-bottom: 30px;
+}
 
+@media screen and (max-width: 600px) {
+  .my-pages {
+    padding-right: 50px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .my-pages {
+    padding-right: 20px;
+  }
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .home-pic img{
+  padding-right: 50px;
   padding-top: 100px;
-  max-width: 600px;
+  max-width: 550px;
 }
 
 /* Style the header: fixed position (always stay at the top) */
@@ -206,7 +226,6 @@ a {
   /*border: 1px solid #C0C0C0;*/
   /*box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);*/
   cursor: pointer;
-
 }
 
 /* Links inside the dropdown */
@@ -300,35 +319,73 @@ h5 {
 .page-container {
   padding-top: 80px;
   line-height: 30px;
+  margin-left: 10px;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-
-.case-container img{
-  max-width: 160px;
-
+.case-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 580px;
+  padding-right: 20px;
 }
+
 
 .case img{
-  max-width: 90%;
+  max-width: 70%;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.gif img {
   padding-bottom: 30px;
   padding-top: 20px;
+  max-width: 200px
+}
+
+.side-by-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.text {
+  max-width: 300px;
+  flex-grow: 1;
+}
+
+.photos {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
 }
 
 .photos img {
   padding-bottom: 20px;
   padding-right: 20px;
-  float: left;
   max-width: 250px;
 }
 
 .tools, .collaborators {
   padding-top: 50px;
   font-weight: 300;
+  padding-right: 10px;
 }
 
 .collaborators {
   float:left;
+}
+
+.bottom-space {
+  height: 100px;
 }
 
 
@@ -356,18 +413,22 @@ h5 {
 }
 
 .bio {
-  padding-left: 10px;
-  padding-right: 30px;
-  margin-right: 80px;
   padding-bottom: 50px;
   font-weight: 300;
+  max-width: 500px;
+
+}
+.reviews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-left: 100px;
 
 }
 
 .review {
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-bottom: 60px;
+  width: 350px;
 
 }
 
@@ -389,18 +450,35 @@ h5 {
 
 }
 
+.about-container-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
 
 .my-pic img {
   max-width: 400px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  padding-right: 30px;
 
 
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
 }
 
 .logos img{
   width: 45px;
   padding-top: 10px;
   padding-bottom: 20px;
+  padding-right: 10px;
 
 
 }
