@@ -4,6 +4,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
     <title> Rachel Lin </title>
+    <link rel="icon" type="png" href="assets/img/favicon.jpeg"/>
+    <button id="scroll">↑</button>
+      <script src="../assets/js/scroll.js">
+      function scrollFunction() {
+        btn=document.getElementById("scroll");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          btn.style.display = "block";
+          btn.addEventListener('click', () => window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+          }));
+        } else {
+          btn.style.display = "none";
+        }
+      }
+      </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
@@ -19,17 +35,14 @@
         <div class="progress-bar" id="myBar"></div>
       </div>
     </div>
-    <div class="container">
-      <div class = "row">
-        <div class="menu">
 
-            <a id = "my-name" href = "index.html"> Rachel Lin </a>
-            <div class = "my-pages">
-              <a id = "page" href = "index.html"> UI/UX </a>
-              <a id = "page" href = "about.html"> About </a>
-              <a id = "page" href = "https://drive.google.com/file/d/1lzn1uHrBSMEXKEiPmymv4TRRRkampUdg/view?usp=sharing"> Resume </a>
-            </div>
-
+    <div class="menu">
+        <a id = "my-name" href = "index.html"> Rachel Lin </a>
+        <div class = "my-pages">
+          <a id = "page" href = "index.html"> UI/UX </a>
+          <a id = "page" href = "about.html"> About </a>
+          <a id = "page" href = "https://drive.google.com/file/d/1lzn1uHrBSMEXKEiPmymv4TRRRkampUdg/view?usp=sharing"> Resume </a>
+        </div>
       </div>
 
     <div class="page-container">
@@ -173,7 +186,10 @@
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
   }
+
   </script>
+
+
 
 
 
