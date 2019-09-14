@@ -77,10 +77,18 @@ body {
   flex-wrap: wrap;
 }
 
+
+
 .home-pic img{
   padding-right: 50px;
   padding-top: 100px;
   max-width: 550px;
+}
+
+.bi-caption {
+  padding-top: 20px;
+  max-width: 500px;
+  font-weight: 300;
 }
 
 /* Style the header: fixed position (always stay at the top) */
@@ -397,7 +405,7 @@ h5 {
 }
 
 .bottom-space {
-  height: 100px;
+  height: 120px;
 }
 
 
