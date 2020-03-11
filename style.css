@@ -116,7 +116,7 @@ body {
 }
 
 .filter-container {
-  padding-top: 60px;
+  padding-top: 20px;
   display: flex;
   justify-content: center;
 }
@@ -196,7 +196,7 @@ a {
 /* Dropdown Button */
 .dropbtn {
   background-color: #FFFFFF;
-  color: #808080;
+  color: #000000;
   font-weight: 500;
   text-align: left;
   border-radius: 20px;
@@ -206,11 +206,32 @@ a {
   border: 1px	solid #E0E0E0;
   /*box-shadow: 0 8px 20px rgba(0,0,0,0.19), 0 2px 5px rgba(0,0,0,0.23);*/
   cursor: pointer;
+  position: relative;
+  margin-bottom: 12px;
+  bottom: -8px;
+  opacity: 0.3;
 }
 
-.dropbtn img {
+.dropbtn2 {
+  background-color: #FFFFFF;
+  color: #808080;
+  font-weight: 500;
+  border-radius: 20px;
+  height: 47px;
+  width: 360px;
+  border: 1px	solid #E0E0E0;
+  /*box-shadow: 0 8px 20px rgba(0,0,0,0.19), 0 2px 5px rgba(0,0,0,0.23);*/
+  cursor: pointer;
+  position: relative;
+  bottom: -55px;
+}
+
+.dropbtn2 img {
   width: 8%;
+  padding-top: 14px;
+  padding-right:12px;
   float: right;
+
 }
 
 .dropbtn:focus {
@@ -362,13 +383,8 @@ h5 {
   z-index: 1000;
 }
 #btp-button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
+  content: url(up-arrow.svg);
+
 }
 #btp-button:hover {
   cursor: pointer;
