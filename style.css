@@ -208,6 +208,11 @@ a {
   cursor: pointer;
 }
 
+.dropbtn img {
+  width: 8%;
+  float: right;
+}
+
 .dropbtn:focus {
   outline: none;
 }
