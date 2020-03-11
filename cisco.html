@@ -36,6 +36,8 @@
       </div>
     </div>
 
+    <a id="btp-button"></a>
+
     <div class="menu">
         <a id = "my-name" href = "index.html"> Rachel Lin </a>
         <div class = "my-pages">
@@ -185,6 +187,21 @@
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
   }
+
+  var btn = $('#btp-button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
 
   </script>
 

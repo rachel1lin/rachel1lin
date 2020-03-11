@@ -264,6 +264,8 @@ a {
     transition: color 0.2s ease-out;
 }
 
+/* drop down content hover colors */
+
 .cisco:hover a{
   color: #5EA2B6;
   text-decoration: none;
@@ -340,6 +342,46 @@ h5 {
     cursor: pointer;
     padding: 15px
 }
+
+/* back to top button */
+
+#btp-button {
+  display: inline-block;
+  background-color: #000000;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#btp-button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#btp-button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#btp-button:active {
+  background-color: #555;
+}
+#btp-button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 .page-container {
   padding-top: 80px;
