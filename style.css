@@ -486,21 +486,23 @@ h5 {
 .bottom-space {
   height: 120px;
 }
-
-.cash-photos img {
-  max-width: 280px;
-  padding-right: 20px;
+.cash-photos {
+  padding-right: 50px;
 }
+
 
 @media screen and (max-width: 1000px) {
   .cash-photos img{
     padding-top: 10px;
+    padding-right: 20px;
+    max-width: 350px;
   }
 }
 
 @media screen and (min-width: 1001px) {
   .cash-photos img {
     padding-top: 80px;
+    max-width: 250px;
   }
 }
 
