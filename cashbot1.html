@@ -19,6 +19,8 @@
         <div class="progress-bar" id="myBar"></div>
       </div>
     </div>
+
+    <a id="btp-button"></a>
         <div class="menu">
             <a id = "my-name" href = "index.html"> Rachel Lin </a>
             <div class = "my-pages">
@@ -28,16 +30,12 @@
             </div>
           </div>
 
-
     <div class="page-container">
 
-    <div class="row">
-      <div class="col-sm-3">
+
         <div class="cash-photos">
           <img src="cash1.png" alt="cash cash cash"></img>
         </div>
-      </div>
-      <div class="col-sm-5">
         <div class="case-container">
           <h1>Cashbot.ai Creator Experience</h1><h2>Summer 2018</h2>
           <h3>Visual design for customer-facing experience</h3>
@@ -68,7 +66,7 @@
             the list view. The list view was good for editing captions and titles, but I wanted another
             view that worked for those who wanted to rapidly choose products and use a default title. <br><br>
 
-            I also made the loading screen graphics. I styled it similarly to the existing cashbot.ai logo.
+            Below are three example screens. Let me know if you'd like to see the rest!
 
             <br><br>
 
@@ -83,38 +81,46 @@
             to organization, but it resulted in a lot of pages to walk through. I can foresee this being
             a pain point for users if they were to return to this experience to edit something.
 
-
           </div>
         </div>
-      </div>
 
-        <div class="col-sm-2">
+
           <div class="tools">
             <b>Tools</b> <br>  Sketch <br> Adobe Illustrator <br> Zeplin <br> Keynote <br>
           </div>
-        </div>
-        <div class="col-sm-2">
           <div class="collaborators">
             <b>Collaborator</b> <br>  Katherine Qiu <br>
           </div>
         </div>
-      </div>
-      <div class="cashbot-pics">
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="creator2.png">
-          </div>
-          <div class="col-sm-4">
-            <img src="creator5.png">
-          </div>
-          <div class="col-sm-4">
-            <img src="creator6.png">
-          </div>
+        <div class="bottom-space"></div>
+      <div class="case-photos">
+            <img src="creator2.png" onclick="openLightbox();toSlide(1)" class="hover-shadow preview">
+            <img src="creator5.png" onclick="openLightbox();toSlide(2)" class="hover-shadow preview">
+            <img src="creator6.png" onclick="openLightbox();toSlide(3)" class="hover-shadow preview">
       </div>
     </div>
 
+    <div id="Lightbox" class="modal">
+      <span class="close pointer" onclick="closeLightbox()">&times;</span>
+      <div class="modal-content">
+        <div class="slide">
+            <img src="creator2.png" class="image-slide" alt="agent settings" />
+        </div>
+        <div class="slide">
+            <img src="creator5.png" class="image-slide" alt="list view of products" />
+        </div>
+        <div class="slide">
+            <img src="creator6.png" class="image-slide" alt="chart view of products" />
+        </div>
+
+        <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+      </div>
+
     <div class="bottom-space"></div>
     </div>
+    <div class="bottom-space"></div>
 
 
     <script>
@@ -127,6 +133,66 @@
         var scrolled = (winScroll / height) * 100;
         document.getElementById("myBar").style.width = scrolled + "%";
       }
+
+      var slideIndex = 1;
+      showSlide(slideIndex);
+
+      function openLightbox() {
+      document.getElementById('Lightbox').style.display = 'block';
+      }
+
+      function closeLightbox() {
+      document.getElementById('Lightbox').style.display = 'none';
+      }
+
+      function changeSlide(n) {
+      showSlide(slideIndex += n);
+      }
+
+      function toSlide(n) {
+      showSlide(slideIndex = n);
+      }
+
+      function showSlide(n) {
+
+      const slides = document.getElementsByClassName('slide');
+      let modalPreviews = document.getElementsByClassName('modal-preview');
+
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+
+      for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (let i = 0; i < modalPreviews.length; i++) {
+          modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
+      }
+
+      slides[slideIndex - 1].style.display = 'block';
+      modalPreviews[slideIndex - 1].className += ' active';
+      }
+
+
+
+      var btn = $('#button');
+
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+          btn.addClass('show');
+        } else {
+          btn.removeClass('show');
+        }
+      });
+
+      btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+      });
       </script>
 
 
