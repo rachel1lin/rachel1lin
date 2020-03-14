@@ -574,6 +574,11 @@ h5 {
 
 }
 
+.about-container img {
+  min-width: 100%
+
+}
+
 .about-container-container {
   display: flex;
   flex-direction: row;

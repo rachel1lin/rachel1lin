@@ -5,21 +5,7 @@
   <head>
     <title> Rachel Lin </title>
     <link rel="icon" type="png" href="assets/img/favicon.jpeg"/>
-    <button id="scroll">↑</button>
-      <script src="../assets/js/scroll.js">
-      function scrollFunction() {
-        btn=document.getElementById("scroll");
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          btn.style.display = "block";
-          btn.addEventListener('click', () => window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-          }));
-        } else {
-          btn.style.display = "none";
-        }
-      }
-      </script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
@@ -175,8 +161,6 @@
   <div class="bottom-space">
   </div>
 
-
-
 <script>
       // When the user scrolls the page, execute myFunction
   window.onscroll = function() {myFunction()};
@@ -190,26 +174,20 @@
 
   var btn = $('#btp-button');
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
 
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
 
   </script>
-
-
-
-
-
-
 
 	</body>
 </html>
