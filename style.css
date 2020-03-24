@@ -506,6 +506,17 @@ h5 {
   }
 }
 
+.hmw {
+  margin: 0;
+  border: 1px solid gray;
+  padding: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0px 50px;
+  text-align: center;
+
+}
+
 .case-photos{
   display: flex;
   flex-direction: row;

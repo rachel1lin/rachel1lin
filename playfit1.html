@@ -19,6 +19,9 @@
         <div class="progress-bar" id="myBar"></div>
       </div>
     </div>
+
+    <a id="btp-button"></a>
+
     <div class="menu">
         <a id = "my-name" href = "index.html"> Rachel Lin </a>
         <div class = "my-pages">
@@ -208,8 +211,9 @@
           <b> Collaborators</b> <br> Katherine Ong <br> Mariela Hernandez <br> Serena Chan <br><br>
           <b>Mentor</b> <br> Kathleen Hsu
         </div>
-        <div class="bottom-space"></div>
+
         </div>
+        <div class="bottom-space"></div>
 
     <script>
           // When the user scrolls the page, execute myFunction
@@ -221,6 +225,22 @@
         var scrolled = (winScroll / height) * 100;
         document.getElementById("myBar").style.width = scrolled + "%";
       }
+
+      var btn = $('#btp-button');
+
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+          btn.addClass('show');
+        } else {
+          btn.removeClass('show');
+        }
+      });
+
+      btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+      });
+
       </script>
 
 
