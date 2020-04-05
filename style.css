@@ -585,17 +585,27 @@ h5 {
   margin-bottom: 40px;
 }
 
-.bio {
-  padding-bottom: 50px;
-  font-weight: 300;
-  max-width: 500px;
-
+@media screen and (max-width: 800px) {
+  .bio{
+    padding-bottom: 50px;
+    font-weight: 300;
+    max-width: 350px;
+  }
 }
+
+@media screen and (min-width: 801px) {
+  .bio {
+    padding-bottom: 50px;
+    font-weight: 300;
+    max-width: 500px;
+  }
+}
+
 .reviews {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding-left: 100px;
 
 }
@@ -638,12 +648,20 @@ h5 {
   margin-left: 10px;
 }
 
-
+@media screen and (max-width: 650px) {
 .my-pic img {
-  max-width: 400px;
+  max-width: 300px;
   padding-bottom: 20px;
-  padding-right: 30px;
+}
 
+}
+
+@media screen and (min-width: 651px) {
+.my-pic img {
+  padding-bottom: 20px;
+  max-width: 300px;
+  padding-right: 30px;
+}
 
 }
 
