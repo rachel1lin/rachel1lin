@@ -15,15 +15,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
 
+
 	<body>
-    <div class="header">
+
+    <div id="header">
       <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
       </div>
     </div>
 
+
     <a id="btp-button"></a>
 
+    <div class = "set-width">
     <div class="menu">
         <a id = "my-name" href = "index.html"> Rachel Lin </a>
         <div class = "my-pages">
@@ -34,115 +38,217 @@
       </div>
 
     <div class="page-container">
-        <div class="photos">
-          <img src="rachelen1.jpeg" alt="Flew to San Diego to do user
-          research with Cisco clients! They had swings that said not to swing."></img>
-          <img src="rachelen2.jpeg" alt="Flew to San Diego to do user
-          research with Cisco clients! They had swings that said not to swing."></img>
-        </div>
+
         <div class="case-container">
           <h1>Cisco</h1><h2>Summer 2019</h2>
-          <h3>Designed a mobile app version of the Customer Portal</h3>
+          <h3>Designed a mobile app for the Customer Portal</h3>
+          <div class = "tools_collab">
+            <div class="tools">
+              <b>Tools</b> <br> Figma<br>  Sketch <br> InVision <br> Wireframing<br>  Sketching <br>
+              User interviews <br> Storyboarding
+            </div>
+            <div class="collaborators">
+              <b> Collaborators</b> <br> Helen Li <br><br> <b>Manager</b> <br> Brian Sarbin
+            </div>
+          </div>
+        </div>
+
           <div class="case"><br>
+            <h4>Background</h4>
             When I joined Cisco the summer of 2019, the Cisco Customer Experience (CX) Team was working on
             a new product called the Customer Portal (CP). The CP is a CRM application that consolidates and organizes
             onboarding, troubleshooting, and educational resources
             for all Cisco products. The CP provides a step-by-step guide for all Cisco products and filters the relevant
-            resources (PDFs, webinars, license training, etc.) for each step. It allows clients to
-            proactively prevent problems instead of retroactively scrambling to fix, say, a network crash.
+            resources (PDFs, webinars, license training, etc.) for each step. Its largest value prop is that it allows clients to proactively prevent problems instead of retroactively scrambling them.
             This was the solution to clients struggling with Cisco’s antiquated search
-            function to troubleshoot problems and inefficient usage of support cases.
+            function (shown below) to troubleshoot problems and inefficient usage of support cases.
+            My task for the summer was to design a mobile app for the CP.
 
-
-            <br><br> My task for the summer was to design a mobile app for the CP.
-            <br><br><br>
-            <h4>NEEDFINDING</h4>
-
-            I, along with members of the CX team, flew down to San Diego to attend the <i>Cisco Live!</i> conference
-            and conducted user research with Cisco clients. Our main
-            target audience was network engineers, who benefit the most from the CP and use the CP directly.
-            <br><br>
-            Main Interview Insights:
-            <ul>
-            <li>Network engineers are consistently on-the-go and often travel for work. </li>
-
-            <li>Users expected the mobile app to notify them and provide the most pertinent information up
-            front. </li>
-
-            <li>Clients want better and quicker access to customer support. </li>
-            </ul>
-            <br><Br>
-
-            <h4>PROBLEM</h4>
-            Based off the research, I created this problem statement to help guide my process. <br><br>
-            <h2> How might we expand our current web platform to mobile so we can improve network engineers' accessibility to the CP? </h2>
-            <br><br><br>
-
-            <h4>IDEATION</h4>
-            My next task was to restructure this vast CRM tool into a compact mobile app.
-            As part of my process, I sketched some navigation and interaction designs and wrote out all the possible user flows.
-            Because the prototype of the CP did not yet have a homepage, I devised a home page that would allow users access
-            to the most important highlights, as desired by users from the research.
-            <br><br>
-            Since there was a plethora of possible flows to explore, my collaborator and I each focused on
-            flows that we felt were most useful to network engineers while tackling every section of the CP.
-            My collaborator worked on Assets and Problem Resolution while I worked on the Home Page and Lifecycle.
-
-            <br><br>
-
-            <img src="cisco-ideation.jpg">
-            <br><br>
-
-            <h4>PROTOTYPING </h4>
-            I storyboarded the flow and included possible touch points where a network engineer will
-            interact with his/her phone through a typical day. <br><br>
-
-            Ned is a network engineer whose company has acquired a new site, and he is
-            responsible for setting up its network. He wants to do a thorough job and knows
-            that the CP will allow him to take preventative measures and maintain a healthy network.
-            So begins his user journey with the CP. <br><br>
-
-            The first thing he does is schedule a webinar from his laptop while at work to learn about setting
-            up his product. Ned’s days are filled with meetings and collaboration, so he wants to take his
-            learning outside the workplace. The scheduled webinar shows up in the app's home screen and from there,
-            he watches the webinar on the commute to-and-from work, thanks to the portability of his mobile phone.
-            <br><br>
-
-            <div class="side-by-side">
-              <div class="gif">
-                <img src="schedule.gif"></div>
-                <div class="text"> After Ned watches his scheduled webinar, he browses through
-                the suggested resources. In order to drive further engagement after a video was watched,
-                I added the "Suggested Resources" section, so that the user experience could cascade through more and more resources.
-                While discovering more resources, the user can also schedule additional webinars.<br></div>
+              <div class="case-img">
+                <div> <img src="cisco_search1.png" alt="Old way of troubleshooting/searching"></img>
+                </div>
+                <div> <img src="cisco_search1.png" alt="Reactive way for clients to solve problems"></img>
+                </div>
               </div>
+              <h6> How troubleshooting used to look for Cisco clients </h6>
 
-            <div class="side-by-side">
-              <div class="gif">
-                <img src="highlights.gif"></div>
-                <div class="text"> I designed a home screen page that allows for Ned
-                to see the most important and relevant information right when he opens the app, a design decision driven by our research.
-                I originally designed a drag-and-drop list to help users sort their priorities because users said they
-                valued customizability in a mobile app, but this design would limit the amount of content that could be displayed.
-                I decided to switch customizability for cleanliness and employed the Star filter, inspired by the Twitter and Gmail mobile apps.
-                This method works well with a larger number of notifications and content can be more efficiently sorted with the Starred tab. <br>
-              </div></div>
 
-           <div class="side-by-side">
-            <div class="gif">
-              <img src="lifecycle.gif"></div>
-              <div class="text">Coming back to the original story, Ned needs to go to the network site to set up his product.
-              He uses his computer to pull up the command line interface but cannot access the instructions through his computer.
-              He pulls out his phone and walks through the mobile app again to the Lifecycle page, where he finds the relevant PDF for setting up his product, as demo'd below.
-              Ned successfully uses his phone and computer in parallel to efficiently and correctly set up his network hardware.
-            </div> </div>
+            <br><br>
+            <h4>Research</h4>
 
-            <br><br><br>
-            <h4>POSSIBLE NEXT STEPS</h4>
+
+            I, along with members of the CX team, flew down to San Diego to attend the Cisco Live!
+            conference and conducted user research with Cisco clients. Our main target audience was
+            network engineers, who benefit the most from the CP and use the CP directly. To start off
+            our research, I co-wrote high-level questions and then based the rest of the interview guide
+            off of them.
+
+            Here are the three main insights that would influence my design decisions.
+            <div class ="insights">
+              <div><img src="insights1.png" alt="Old way of troubleshooting/searching"></img></div>
+              <div> <img src="insight2.png" alt="Old way of troubleshooting/searching"></img></div>
+              <div><img src="insight3.png" alt="Old way of troubleshooting/searching"></img></div>
+            </div>
+
+            <br>
+
+            With the insights from our research coupled with our given task, I devised this problem statement to focus our solutions.
+            <br>
+            <div class="problem-container">
+              <div class="problem"></div>
+              <div class="problem-statement">
+                How might we expand our current web platform to mobile so we can improve network engineers' accessibility to the CP?
+              </div>
+            </div>
+            <br><br>
+
+            <h4>Planning</h4>
+            Part of my process to answering such vague questions is to brain-dump onto a piece of paper. I needed to
+            restructure this vast CRM tool into a compact mobile app, so I first set out to lay out the barebones of the CP. I wrote
+            out all the possible user flows and translated the navigation to be adapted to mobile. I also began some preliminary drawings
+            for translating the web interactions into mobile interactions.
+             <div class="case-img">
+               <div> <img src="cisco-ideation.jpg"></img></div>
+             </div>
+             <h6>Don't worry - I can't read it either </h6><br>
+
+             There were a number of possible flows to explore. Instead of making all the screens possible, we divided our work up by
+             features (I took Home Page and Lifecycle) and each crafted a user story that incorporated our research insights and
+             communicated the value our designs brought to the user.
+
+
+            <br><br>
+
+
+            <h4>User Story </h4>
+
+            This story is based off the problem statement above and showcases the different facets of accessibility I wanted to provide for the user: physically and within the app.
+            <br>
+            <br>(1) Ned is a network engineer whose company has acquired a new site, and he is responsible for setting up its network. He wants to do a thorough job and knows that the CP will allow him to take preventative measures and maintain a healthy network. So begins his user journey with the CP.
+            <br>(2) The first thing he does is schedule a webinar from his laptop while at work to learn about setting up his product. Ned’s days are filled with meetings and collaboration, so he wants to take his learning outside the workplace.
+            <br>(3) The scheduled webinar shows up in the app's home screen and from there, he watches the webinar on the commute to-and-from work, thanks to the portability of his mobile phone.
+            <br>(4) Ned thankfully gets off at the right stop - he’s admittedly missed it a couple times.
+
+            <div class="case-img-small">
+              <div><img src="cisco_userstory1.jpg"></img></div>
+              <div><img src="cisco_userstory2.jpg"></img></div>
+            </div>
+            <br>(5) The next day, Ned goes to the network site to set up his product and pulls out his phone to review the video.
+            <br>(6) He uses his computer to pull up the command line interface but cannot access the instructions through his computer.
+            <br>(7) He pulls out his phone and walks through the mobile app again to the Lifecycle page, where he finds the relevant PDF for setting up his product, as demo'd below.
+            <br>(8) Ned successfully uses his phone and computer in parallel to efficiently and correctly set up his network hardware. He checks off his in-app to-do list. Good job, Ned.
+
+            <div class="case-img">
+              <div><img src="cisco_userstory3.jpg"></img></div>
+            </div>
+            <br>
+            (9, 10) I added on a AR functionality to the story that makes finding documentation for a product easier by scanning a barcode. This is a potential future AR project for Cisco.
+            <br><br>
+            <h4> Solution #1</h4>
+            <br>
+            <b> Building a simple and omnipresent navigation and making search functions through it. </b> <br>
+            Navigation allows the user to jump through multiple pages easily. I placed the search within the hamburger menu, so users can search universally instead of within each page. Next to the search button, the AR functionality follows the same principle of being available at the click of a button.
+
+            <div class="case-img-small">
+              <div><img src="cisco_nav1.png"></img></div>
+              <div><img src="cisco_nav2.png"></img></div>
+            </div>
+            <br><br>
+            <h4> Solution #2</h4>
+            <br>
+            <b> Creating a simple experience for browsing and scheduling resources. </b> <br>
+            In order to have access to more relevant resources, I designed a “Suggested Resources” section underneath a video so users can further engage with more information and cascade through each page. Because Ned relies on watching the videos on his phone, I also built in a pop-up menu that allows him more interactions, such as, choosing a session for a webinar.
+
+            <div class="case-img-small">
+              <div><img src="cisco_web1.png"></img></div>
+              <div><img src="cisco_web2.png"></img></div>
+              <div><img src="cisco_web3.png"></img></div>
+            </div>
+            <div class="case-img-small">
+              <div><img src="cisco_web4.png"></img></div>
+              <div><img src="cisco_web5.png"></img></div>
+            </div>
+            <br><br>
+            <h4> Solution #3</h4>
+            <br>
+            <b>Collecting and consolidating highlights across all sections of the CP</b>
+            <br>
+            Using the second main insight from the research, I came up with a couple of ideas for how the home screen would look. Users expected a mobile app to be a simplified version of the web portal and wanted to have the most important information up front.
+            <br>
+            <h3> Idea (1) </h3>
+            <div class="case-img-small">
+              <div><img src="cisco_home1.png"></img></div>
+              <div><img src="cisco_home2.png"></img></div>
+              <div><img src="cisco_home3.png"></img></div>
+            </div>
+
+            <div class="pros-cons">
+              <div class="pros">
+                <ul>
+                  <li> Allows for prioritization </li>
+                </ul>
+              </div>
+              <div class="cons">
+                <ul>
+                  <li> Not scalable </li>
+                  <li> Hold-and-drag is not intuitive </li>
+                </ul>
+              </div>
+            </div>
+
+
+            <h3> Idea (2) </h3>
+            <div class="case-img-small">
+              <div><img src="cisco_home4.png"></img></div>
+              <div><img src="cisco_home5.png"></img></div>
+            </div>
+
+            <div class="pros-cons">
+              <div class="pros">
+                <ul>
+                  <li> Allows for prioritization </li>
+                  <li> More information fits on the screen </li>
+                </ul>
+              </div>
+              <div class="cons">
+                <ul>
+                  <li> Lot of text to visually parse through </li>
+                </ul>
+              </div>
+            </div>
+
+            <h3> Idea (3) </h3>
+            <div class="case-img-small">
+              <div><img src="cisco_home6.png"></img></div>
+            </div>
+            <div class="pros-cons">
+              <div class="pros">
+                <ul>
+                  <li> Appealing data visualizations break up heavy text</li>
+                  <li> More filtering </li>
+                  <li> Closest to web CP's design </li>
+                </ul>
+              </div>
+              <div class="cons">
+                <ul>
+                  <li> Shows less highlights</li>
+                </ul>
+              </div>
+            </div>
+
+            <br>
+            After the evolution of ideas, Idea (3) seemed to be the most effective for satsifying our users’ needs. Idea (3) was further iterated upon and developed after I left my summer internship.
+
+
+            <br><br>
+            <h4>Possible Next Steps</h4>
+            <br>
             If I could continue on this project, I would want to create a user testing guide to see if the designs accomplished the goal of making resources more
-            accessible. I would measure its success by high click-through rates and time spent on each page.<br><br><br>
+            accessible. I would measure its success by high click-through rates and time spent on each page.<br>
 
-            <h4>NOTES</h4>
+            <br>
+            <h4>Extra, Extra Notes</h4>
+            <br>
             Our reasoning from the research initially led us to believe that mobile notifications were the most important feature
             that the mobile CP could provide. One of our stakeholders pointed out that users could simply get an email about any
             important updates. I realized that just because users expected notifications, it didn’t mean that notifications would
@@ -153,17 +259,17 @@
             is that a mobile app allows for a better UI, especially because the web CP has so much information. A web browser has limited
             functionalities that would not allow for future AR and WebEx integrations and filtered home page. <br><br><br>
           </div>
+        <div class = "spacy"> </div>
         </div>
-        <div class="tools">
-          <b>Tools</b> <br> Figma<br>  Sketch <br> InVision <br> Wireframing<br>  Sketching <br>
-          User interviews <br> Storyboarding
-        </div>
-        <div class="collaborators">
-          <b> Collaborators</b> <br> Helen Li <br><br> <b>Manager</b> <br> Brian Sarbin
-        </div>
+
       </div>
-    </div>
-  </div>
+      <div class="photos">
+        <img src="rachelen1.jpeg" alt="Flew to San Diego to do user
+        research with Cisco clients! They had swings that said not to swing."></img>
+        <img src="rachelen2.jpeg" alt="Flew to San Diego to do user
+        research with Cisco clients! They had swings that said not to swing."></img>
+      </div>
+
   <div class="bottom-space">
   </div>
 
