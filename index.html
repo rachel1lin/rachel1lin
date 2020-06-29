@@ -34,20 +34,52 @@
         <div class="selected">
           Selected Works:
           <div class="selected-buttons">
+            <div class="point-to">
+              <img src ="pointer.png" id="mayvBtnTriangle" style="width:20px;height:20px;">
               <a href="mayv.html">
-                <img src="mayvbutton.png">
+                <img src="mayvbutton.png" id="mayvBtn" onmouseover="showTriangle(this)" onmouseout="hideTriangle(this)">
               </a>
+            </div>
 
-            <a href="cisco.html">
-              <img src="ciscobutton.png">
-            </a>
-            <a href="playfit.html">
-              <img src="playfitbutton.png">
-            </a>
-            <a href="truhu.html">
-              <img src="truhubutton.png">
-            </a>
+            <div class="point-to">
+              <img src ="pointer.png" id="ciscoBtnTriangle" style="width:20px;height:20px;">
+              <a href="cisco.html">
+                <img src="ciscobutton.png" id="ciscoBtn" onmouseover="showTriangle(this)" onmouseout="hideTriangle(this)">
+              </a>
+            </div>
+
+            <div class="point-to">
+              <img src ="pointer.png" id="playfitBtnTriangle" style="width:20px;height:20px;">
+              <a href="playfit.html">
+                <img src="playfitbutton.png" id="playfitBtn" onmouseover="showTriangle(this)" onmouseout="hideTriangle(this)">
+              </a>
+            </div>
+
+            <div class="point-to">
+                <img src ="pointer.png" id="truhuBtnTriangle" style="width:20px;height:20px;">
+              <a href="truhu.html">
+                <img src="truhubutton.png" id="truhuBtn" onmouseover="showTriangle(this)" onmouseout="hideTriangle(this)">
+              </a>
+            </div>
           </div>
+          <script>
+            function showTriangle(id) {
+              triangleId = id + "Triangle";
+              var triangle = document.getElementById(triangleId);
+              triangle.classList.add("showTriangle");
+              if(triangle.classList.contains('hideTriangle'))
+                triangle.classList.remove("hideTriangle");
+              }
+
+
+            function hideTriangle(id) {
+              triangleId = id + "Triangle";
+              var triangle = document.getElementById(triangleId);
+              triangle.classList.add("hideTriangle");
+              if(triangle.classList.contains('showTriangle'))
+                triangle.classList.remove("showTriangle");
+              }
+          </script>
         </div>
 
 
