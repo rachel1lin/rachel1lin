@@ -12,7 +12,7 @@ body {
 
 @media screen and (min-width: 601px) {
   .set-width {
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -40,26 +40,26 @@ body {
 
 @media screen and (min-width: 601px) {
   #my-name {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 600px) {
   #my-name {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 601px) {
   #page {
-    font-size: 24px;
+    font-size: 20px;
     padding-left: 30px;
   }
 }
 
 @media screen and (max-width: 600px) {
   #page {
-    font-size: 18px;
+    font-size: 14px;
     padding-right: 15px;
   }
 }
@@ -103,7 +103,8 @@ p {
   border-style: solid;
   width: 100%;
   font-family: 'Roboto Mono', monospace;
-  padding: 20px;
+  font-weight: bold;
+  padding: 30px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -114,32 +115,45 @@ p {
   margin-right: 40px;
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 701px) {
   .welcome img{
-    width: 180px;
+    width: 120px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .welcome img {
     width: 80px;
   }
 }
 
-@media screen and (min-width: 601px) {
-  .welcome{
-      font-size: 32px;
-  }
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 701px) {
   .welcome{
       font-size: 20px;
   }
 }
 
+@media screen and (max-width: 700px) {
+  .welcome{
+      font-size: 16px;
+  }
+}
+
+.flexbox-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.showTriangle {
+  display: block;
+}
+
+.hideTriangle {
+  display: none;
+}
+
 .selected {
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   font-size: 24px;
@@ -150,17 +164,17 @@ p {
 .selected-buttons {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  width: 70%;
   margin: 10px auto;
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 701px) {
   .selected-buttons{
       justify-content: space-between;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .selected-buttons{
       justify-content: center;
   }
@@ -171,13 +185,9 @@ p {
 
 }
 
-.selected-button:hover img{
-  transform: scale(1.2);
-}
-
 @media screen and (min-width: 601px) {
   .selected-buttons img {
-      width: 200px;
+      width: 250px;
   }
 }
 
