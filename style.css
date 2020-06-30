@@ -53,14 +53,12 @@ body {
 @media screen and (min-width: 601px) {
   #page {
     font-size: 20px;
-    padding-left: 30px;
   }
 }
 
 @media screen and (max-width: 600px) {
   #page {
     font-size: 14px;
-    padding-right: 15px;
   }
 }
 
@@ -152,6 +150,66 @@ p {
   display: none;
 }
 
+#ciscoBtn:hover ~ #ciscoBtnTriangle {
+    display: block;
+}
+
+#ciscoBtnTriangle {
+    display: none;
+    position: absolute;
+    left: -30px;
+}
+
+#truhuBtn:hover ~ #truhuBtnTriangle {
+    display: block;
+}
+
+#truhuBtnTriangle {
+    display: none;
+    position: absolute;
+    left: -30px;
+}
+
+#mayvBtn:hover ~ #mayvBtnTriangle {
+    display: block;
+}
+
+#mayvBtnTriangle {
+    display: none;
+    position: absolute;
+    left: -30px;
+}
+
+#playfitBtn:hover ~ #playfitBtnTriangle {
+    display: block;
+}
+
+#playfitBtnTriangle {
+    display: none;
+    position: absolute;
+    left: -30px;
+}
+
+.point-to {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+@media screen and (min-width: 601px) {
+  .point-to{
+      max-width: 275px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .point-to{
+      max-width: 305px;
+  }
+}
+
 .selected {
   margin-top: 40px;
   display: flex;
@@ -159,6 +217,7 @@ p {
   font-size: 24px;
   font-family: 'Roboto Mono', monospace;
   font-weight: bold;
+  justify-content: center;
 }
 
 .selected-buttons {
@@ -168,13 +227,13 @@ p {
   margin: 10px auto;
 }
 
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 769px) {
   .selected-buttons{
       justify-content: space-between;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .selected-buttons{
       justify-content: center;
   }
@@ -187,13 +246,13 @@ p {
 
 @media screen and (min-width: 601px) {
   .selected-buttons img {
-      width: 250px;
+      max-width: 250px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .selected-buttons img{
-      width: 300px;
+      max-width: 280px;
   }
 }
 
