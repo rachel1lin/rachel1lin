@@ -36,6 +36,7 @@ body {
 #my-name {
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
+  color: #000000;
 }
 
 @media screen and (min-width: 601px) {
@@ -140,14 +141,6 @@ p {
 .flexbox-row {
   display: flex;
   flex-direction: row;
-}
-
-.showTriangle {
-  display: block;
-}
-
-.hideTriangle {
-  display: none;
 }
 
 #ciscoBtn:hover ~ #ciscoBtnTriangle {
@@ -265,7 +258,8 @@ p {
   font-family: 'Roboto Mono', monospace;
   color: #676767;
   font-size: 12px;
-  padding-bottom: 5px;
+  padding: 10px;
+  background-color: inherit;
 }
 /* Style the header: fixed position (always stay at the top) */
 #header {
@@ -296,22 +290,25 @@ a {
 
 
 
-h1 {
-  font-size: 36px;
+h1, h2, h3, h4 {
+  font-family: "Roboto Mono", monospace;
   }
 
-h2 {
-  font-size: 24px;
-  font-weight: 400;
-  display: inline-block;
+h1 { /* company */
+  font-size: 30px;
+  font-weight: bold;
 }
 
-h3 {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #6D6D6D;
+
+h2 { /* time */
+  font-size: 20px;
+  font-weight: normal;
 }
+
+h3 { /* team */
+  font-size: 12px;
+}
+
 
 h4 {
   font-size: 28px;
@@ -386,34 +383,59 @@ h5 {
 
 
 .page-container {
-  padding-top: 80px;
   line-height: 24px;
-  width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin: auto;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 
-.case-container {
+@media screen and (min-width: 601px) {
+.mobile-cisco-banner{
+  display: none;
+}
+}
+
+@media screen and (max-width: 600px) {
+.mobile-cisco-banner {
+  background-color: #8AE9FF;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  max-width: 250px;
-  height: 450px;
+  color: #1C1836;
+  padding: 30px;
+}
+
+}
+
+@media screen and (min-width: 601px) {
+.cisco-banner img {
+  max-width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+}
+
+@media screen and (max-width: 600px) {
+.cisco-banner img {
+  display: none;
+}
+
 }
 
 .case {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 801px) {
 .case {
-  max-width: 60%;
+  max-width: 70%;
 }
 }
 
@@ -426,7 +448,7 @@ h5 {
 
 .case-img img{
   height: auto;
-  max-width: 300px;
+  max-width: 400px;
   -webkit-box-shadow: 2px 3px 13px 3px rgba(155,155,155,0.66);
   box-shadow: 2px 3px 13px 3px rgba(155,155,155,0.66);
   margin-right: 20px;
@@ -436,8 +458,8 @@ h5 {
 
 .case-img{
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 801px) {
@@ -472,8 +494,8 @@ h5 {
 
 .case-img-small{
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 801px) {
@@ -490,7 +512,6 @@ h5 {
 @media screen and (max-width: 800px) {
 .case-img-small {
   flex-direction: column;
-  align-items: flex-start;
   padding-top: 20px;
   margin-bottom: 20px;
   margin: auto;
@@ -572,6 +593,18 @@ h5 {
 }
 /*Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>*/
 
+.userstory{
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+}
+
+
 @media screen and (max-width: 900px) {
 .tools_collab {
   display: flex;
@@ -594,6 +627,7 @@ h5 {
 }
 
 .problem-statement {
+  font-family: "Roboto Mono", monospace;
   font-size: 24px;
   font-weight: 500;
   padding-left: 20px;
@@ -626,7 +660,6 @@ h5 {
   flex: wrap;
   align-items: flex-start;
   justify-content: center;
-  width: 100%;
 }
 
 .photos img {
@@ -730,7 +763,8 @@ h5 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-left: 100px;
+  font-family: "Roboto Mono", monospace;
+  font-style: italic;
 
 }
 
@@ -765,11 +799,10 @@ h5 {
 .about-container-container {
   display: flex;
   flex-direction: row;
-  padding-top: 100px;
+  padding-top: 50px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
-  margin-left: 10px;
 }
 
 @media screen and (max-width: 650px) {
@@ -783,8 +816,7 @@ h5 {
 @media screen and (min-width: 651px) {
 .my-pic img {
   padding-bottom: 20px;
-  max-width: 300px;
-  padding-right: 30px;
+  max-width: 350px;
 }
 
 }
