@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -31,38 +32,29 @@
     <div class="menu">
         <a id = "my-name" href = "index.html"> Rachel Lin </a>
         <div class = "my-pages">
-          <a id = "page" href = "index.html"> UI/UX </a>
           <a id = "page" href = "about.html"> About </a>
           <a id = "page" href = "https://drive.google.com/file/d/1TA_0DLwJ_gc49gHMUeHDFoUixG-HZQ_a/view?usp=sharing" target="_blank"> Resume </a>
         </div>
       </div>
 
     <div class="page-container">
+      <div class="mobile-cisco-banner">
+        <h1> Cisco </h1>
+        <h2> Summer 2019 </h2>
+      </div>
+      <div class="cisco-banner">
+          <img src="cisco-banner.png" alt="cisco summer 2019">
+      </div>
 
-        <div class="case-container">
-          <h1>Cisco</h1><h2>Summer 2019</h2>
-          <h3>Designed a mobile app for the Customer Portal</h3>
-          <div class = "tools_collab">
-            <div class="tools">
-              <b>Tools</b> <br> Figma<br>  Sketch <br> InVision <br> Wireframing<br>  Sketching <br>
-              User interviews <br> Storyboarding
-            </div>
-            <div class="collaborators">
-              <b> Collaborators</b> <br> Helen Li <br><br> <b>Manager</b> <br> Brian Sarbin
-            </div>
-          </div>
-        </div>
-
-          <div class="case"><br>
-            <h4>Background</h4>
-            When I joined Cisco the summer of 2019, the Cisco Customer Experience (CX) Team was working on
-            a new product called the Customer Portal (CP). The CP is a CRM application that consolidates and organizes
-            onboarding, troubleshooting, and educational resources
-            for all Cisco products. The CP provides a step-by-step guide for all Cisco products and filters the relevant
-            resources (PDFs, webinars, license training, etc.) for each step. Its largest value prop is that it allows clients to proactively prevent problems instead of retroactively scrambling them.
-            This was the solution to clients struggling with Cisco’s antiquated search
-            function (shown below) to troubleshoot problems and inefficient usage of support cases.
-            My task for the summer was to design a mobile app for the CP.
+      <div class="case">
+            <h4>Background (Why the Customer Portal is *chef’s kiss*)</h4>
+            When I joined Cisco during Summer 2019, the Cisco Customer Experience Team was working on the Customer Portal (CP),
+            an application that consolidates and organizes Cisco product resources for clients. In the past, clients have struggled
+            in using Cisco’s antiquated search function to troubleshoot problems, and opening a support case to get questions
+            answered can be costly and inefficient. The CP provides a step-by-step repository of resources (i.e. PDFs, webinars,
+            license training, etc.) for all of Cisco’s products. Its largest value prop is that it allows clients to proactively
+            prevent problems instead of retroactively scrambling to fix them.
+      </div>
 
               <div class="case-img">
                 <div> <img src="cisco_search1.png" alt="Old way of troubleshooting/searching"></img>
@@ -74,6 +66,8 @@
 
 
             <br><br>
+
+            <div class="case">
             <h4>Research</h4>
 
 
@@ -107,11 +101,13 @@
             restructure this vast CRM tool into a compact mobile app, so I first set out to lay out the barebones of the CP. I wrote
             out all the possible user flows and translated the navigation to be adapted to mobile. I also began some preliminary drawings
             for translating the web interactions into mobile interactions.
+          </div>
+
              <div class="case-img">
                <div> <img src="cisco-ideation.jpg"></img></div>
              </div>
              <h6>Don't worry - I can't read it either </h6><br>
-
+             <div class="case">
              There were a number of possible flows to explore. Instead of making all the screens possible, we divided our work up by
              features (I took Home Page and Lifecycle) and each crafted a user story that incorporated our research insights and
              communicated the value our designs brought to the user.
@@ -124,26 +120,45 @@
 
             This story is based off the problem statement above and showcases the different facets of accessibility I wanted to provide for the user: physically and within the app.
             <br>
-            <br>(1) Ned is a network engineer whose company has acquired a new site, and he is responsible for setting up its network. He wants to do a thorough job and knows that the CP will allow him to take preventative measures and maintain a healthy network. So begins his user journey with the CP.
-            <br>(2) The first thing he does is schedule a webinar from his laptop while at work to learn about setting up his product. Ned’s days are filled with meetings and collaboration, so he wants to take his learning outside the workplace.
-            <br>(3) The scheduled webinar shows up in the app's home screen and from there, he watches the webinar on the commute to-and-from work, thanks to the portability of his mobile phone.
-            <br>(4) Ned thankfully gets off at the right stop - he’s admittedly missed it a couple times.
-
-            <div class="case-img-small">
-              <div><img src="cisco_userstory1.jpg"></img></div>
-              <div><img src="cisco_userstory2.jpg"></img></div>
+            <div class ="userstory">
+              <div class="story">
+                <img src="userstory1.png">
+                (1) Ned is a network engineer whose company has acquired a new site, and he is responsible for setting up its network. He wants to do a thorough job and knows that the CP will allow him to take preventative measures and maintain a healthy network. So begins his user journey with the CP.
+              </div>
+              <div class="story">
+                <img src="userstory2.png">
+                (2) The first thing he does is schedule a webinar from his laptop while at work to learn about setting up his product. Ned’s days are filled with meetings and collaboration, so he wants to take his learning outside the workplace.
+              </div>
+              <div class="story">
+                <img src="userstory3.png">
+                (3) The scheduled webinar shows up in the app's home screen and from there, he watches the webinar on the commute to-and-from work, thanks to the portability of his mobile phone.
+              </div>
+              <div class="story">
+                <img src="userstory4.png">
+                (4) Ned thankfully gets off at the right stop - he’s admittedly missed it a couple times.
+              </div>
+              <div class="story">
+                <img src="userstory5.png">
+                (5) The next day, Ned goes to the network site to set up his product and pulls out his phone to review the video.
+              </div>
+              <div class="story">
+                <img src="userstory6.png">
+                (6) He uses his computer to pull up the command line interface but cannot access the instructions through his computer.
+              </div>
+              <div class="story">
+                <img src="userstory7.png">
+                (7) He pulls out his phone and walks through the mobile app again to the Lifecycle page, where he finds the relevant PDF for setting up his product, as demo'd below.
+              </div>
+              <div class="story">
+                <img src="userstory8.png">
+                (8) Ned successfully uses his phone and computer in parallel to efficiently and correctly set up his network hardware. He checks off his in-app to-do list. Good job, Ned.
+              </div>
+              <div class="story">
+                <img src="userstory9.png">
+                (9, 10) I added on a AR functionality to the story that makes finding documentation for a product easier by scanning a barcode. This is a potential future AR project for Cisco.
+              </div>
             </div>
-            <br>(5) The next day, Ned goes to the network site to set up his product and pulls out his phone to review the video.
-            <br>(6) He uses his computer to pull up the command line interface but cannot access the instructions through his computer.
-            <br>(7) He pulls out his phone and walks through the mobile app again to the Lifecycle page, where he finds the relevant PDF for setting up his product, as demo'd below.
-            <br>(8) Ned successfully uses his phone and computer in parallel to efficiently and correctly set up his network hardware. He checks off his in-app to-do list. Good job, Ned.
 
-            <div class="case-img">
-              <div><img src="cisco_userstory3.jpg"></img></div>
-            </div>
-            <br>
-            (9, 10) I added on a AR functionality to the story that makes finding documentation for a product easier by scanning a barcode. This is a potential future AR project for Cisco.
-            <br><br>
             <h4> Solution #1</h4>
             <br>
             <b> Building a simple and omnipresent navigation and making search functions through it. </b> <br>
@@ -175,7 +190,7 @@
             <br>
             Using the second main insight from the research, I came up with a couple of ideas for how the home screen would look. Users expected a mobile app to be a simplified version of the web portal and wanted to have the most important information up front.
             <br>
-            <h3> Idea (1) </h3>
+            <h2> Idea (1) </h2>
             <div class="case-img-small">
               <div><img src="cisco_home1.png"></img></div>
               <div><img src="cisco_home2.png"></img></div>
@@ -197,7 +212,7 @@
             </div>
 
 
-            <h3> Idea (2) </h3>
+            <h2> Idea (2) </h2>
             <div class="case-img-small">
               <div><img src="cisco_home4.png"></img></div>
               <div><img src="cisco_home5.png"></img></div>
@@ -217,7 +232,7 @@
               </div>
             </div>
 
-            <h3> Idea (3) </h3>
+            <h2> Idea (3) </h2>
             <div class="case-img-small">
               <div><img src="cisco_home6.png"></img></div>
             </div>
@@ -263,7 +278,7 @@
         </div>
 
       </div>
-      <div class="photos">
+      <div class="set-width photos">
         <img src="rachelen1.jpeg" alt="Flew to San Diego to do user
         research with Cisco clients! They had swings that said not to swing."></img>
         <img src="rachelen2.jpeg" alt="Flew to San Diego to do user
