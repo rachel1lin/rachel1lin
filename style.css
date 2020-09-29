@@ -12,7 +12,6 @@ body {
   background-size: 60px;
   background-repeat: repeat-x;
   background-attachment: fixed;
-
 }
 
 .set-width{
@@ -337,15 +336,18 @@ h1, h2, h3, h4 {
   font-family: "Roboto Mono", monospace;
   }
 
-h1 { /* company */
-  font-size: 30px;
-  font-weight: bold;
+h1 { /* problem/opportunity */
+  font-size: 20px;
+  font-weight: 500;
+  display: inline;
 }
 
 
-h2 { /* time */
-  font-size: 20px;
-  font-weight: normal;
+h2 { /* sub-headline */
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #A9A9A9;
+  letter-spacing: 2px;
 }
 
 h3 { /* team */
@@ -353,7 +355,7 @@ h3 { /* team */
 }
 
 
-h4 {
+h4 { /* headline */
   font-size: 28px;
   font-weight: 500;
   }
@@ -366,13 +368,19 @@ h5 {
     padding-right: 60px;
   }
 
-  h6 {
+  h6 { /* image caption */
     font-size: 14px;
     font-style: italic;
     color: #989898;
     font-weight: 300;
     text-align: center;
   }
+
+  ul {
+  list-style-image: url('tiny-bush.png');
+    }
+  }
+
 
 
 #scroll {
@@ -495,7 +503,6 @@ h5 {
 .banner img {
   max-width: 100%;
   margin-top: 40px;
-  margin-bottom: 40px;
 }
 }
 
@@ -510,7 +517,7 @@ h5 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 @media screen and (min-width: 801px) {
@@ -528,11 +535,9 @@ h5 {
 
 .case-img img{
   height: auto;
-  max-width: 400px;
+  max-width: 500px;
   -webkit-box-shadow: 2px 3px 13px 3px rgba(155,155,155,0.66);
   box-shadow: 2px 3px 13px 3px rgba(155,155,155,0.66);
-  margin-right: 20px;
-  margin-bottom: 10px;
 
 }
 
@@ -561,15 +566,6 @@ h5 {
   margin-bottom: 20px;
   margin: auto;
 }
-}
-
-.case-img img{
-  height: auto;
-  max-width: 300px;
-  -webkit-box-shadow: 2px 3px 13px 3px rgba(155,155,155,0.66);
-  box-shadow: 2px 3px 13px 3px rgba(155,155,155,0.66);
-  margin-right: 20px;
-  margin-bottom: 10px;
 }
 
 .case-img-small{
@@ -677,11 +673,21 @@ h5 {
   overflow: auto;
   display: flex;
   flex-direction: row;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #DCDCDC;
+  margin-top: 20px;
 }
 
 .story {
   display: flex;
   flex-direction: column;
+  margin: 20px;
+  color: #989898;
+}
+
+.story img {
+  padding-bottom: 10px;
 }
 
 
@@ -693,7 +699,7 @@ h5 {
 }
 }
 
-.problem-container{
+.method-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -701,18 +707,65 @@ h5 {
   margin-bottom: 20px;
 }
 
-.problem {
-  width: 30px;
+@media screen and (max-width: 900px) {
+.method-container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+}
+
+.method-container img {
+  max-width: 220px;
+}
+
+.method-container ul {
+  margin-left: 24px;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.method-container li {
+  line-height: 32px;
+}
+
+.row-container{ /* problem statement */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.rectangle {
   background: black;
+  margin-right: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  min-height: 30px;
+
 }
 
 .problem-statement {
   font-family: "Roboto Mono", monospace;
   font-size: 24px;
   font-weight: 500;
-  padding-left: 20px;
   line-height: 30px;
 }
+
+.opportunities {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+/*.learning {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}*/
 
 .gif img {
   padding-bottom: 30px;
