@@ -18,17 +18,28 @@ body {
   margin: auto;
 }
 
+
+@media screen and (min-width: 601px) {
+  .space{
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .space {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 601px) {
   .set-width{
     width: 55%;
-    padding-top: 40px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .set-width {
     width: 70%;
-    padding-top: 30px;
   }
 }
 
@@ -47,7 +58,6 @@ body {
   align-items: center;
   margin: auto;
   width: 100%;
-  margin-bottom: 20px;
   position: fixed;
 }
 
@@ -114,6 +124,7 @@ p {
   display: inline-block;
   margin-bottom: -5px;
 }
+
 
 /* text animation */
 
@@ -251,11 +262,11 @@ p {
   }
 }
 
-
 .selected-buttons {
   display: flex;
   flex-wrap: wrap;
   margin: 10px auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 769px) {
@@ -272,19 +283,19 @@ p {
 }
 
 .selected-buttons img {
-  margin: 10px auto;
+  margin: 15px auto;
 
 }
 
 @media screen and (min-width: 601px) {
   .selected-buttons img {
-      width: 300px;
+      max-width: 250px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .selected-buttons img{
-      max-width: 280px;
+      max-width: 300px;
   }
 }
 
@@ -343,21 +354,25 @@ h1 { /* problem/opportunity */
 }
 
 
-h2 { /* sub-headline */
+h2 { /* gray sub-headline */
   text-transform: uppercase;
   font-size: 16px;
   color: #A9A9A9;
   letter-spacing: 2px;
 }
 
-h3 { /* team */
-  font-size: 12px;
+h3 { /* enlarged standout text */
+  display: inline;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 
 h4 { /* headline */
   font-size: 28px;
   font-weight: 500;
+  padding-bottom: 10px;
   }
 
 h5 {
@@ -368,14 +383,13 @@ h5 {
     padding-right: 60px;
   }
 
-  h6 { /* image caption */
+h6 { /* image caption */
     font-size: 14px;
     font-style: italic;
     color: #989898;
     font-weight: 300;
     text-align: center;
   }
-
   ul {
   list-style-image: url('tiny-bush.png');
     }
@@ -442,73 +456,22 @@ h5 {
   align-items: center;
 }
 
-
-@media screen and (min-width: 601px) {
-.mobile-cisco-banner{
-  display: none;
-}
-}
-
-@media screen and (max-width: 600px) {
-.mobile-cisco-banner {
-  background-color: #8AE9FF;
+.banner {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #1C1836;
-  padding: 30px;
 }
-}
-
-
-@media screen and (min-width: 601px) {
-.mobile-mayv-banner{
-  display: none;
-}
-}
-
-@media screen and (max-width: 600px) {
-.mobile-mayv-banner {
-  background-color: #F8ADAD;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #1C1836;
-  padding: 30px;
-}
-}
-
-@media screen and (min-width: 601px) {
-.mobile-playfit-banner{
-  display: none;
-}
-}
-
-@media screen and (max-width: 600px) {
-.mobile-playfit-banner {
-  background-color: #CBDFFD;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #1C1836;
-  padding: 30px;
-}
-}
-
 
 @media screen and (min-width: 601px) {
 .banner img {
-  max-width: 100%;
-  margin-top: 40px;
+  max-width: 75%;
+  margin-top: 30px;
 }
 }
 
 @media screen and (max-width: 600px) {
 .banner img {
-  display: none;
+  max-width: 100%;
+  margin-top: 60px;
 }
 
 }
@@ -522,7 +485,7 @@ h5 {
 
 @media screen and (min-width: 801px) {
 .case {
-  max-width: 70%;
+  max-width: 75%;
 }
 }
 
@@ -530,15 +493,20 @@ h5 {
 .case {
   max-width: 90%;
 }
+}
 
+.case img{ /* images without shadow */
+  height: auto;
+  width: 100%;
+  margin: auto;
+  margin: 10px 0px;
 }
 
 .case-img img{
   height: auto;
-  max-width: 500px;
+  width: 100%;
   -webkit-box-shadow: 2px 3px 13px 3px rgba(155,155,155,0.66);
   box-shadow: 2px 3px 13px 3px rgba(155,155,155,0.66);
-
 }
 
 .case-img{
@@ -679,6 +647,18 @@ h5 {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 801px) {
+.userstory{
+  max-width: 75%;
+}
+}
+
+@media screen and (max-width: 800px) {
+.userstory {
+  max-width: 90%;
+}
+}
+
 .story {
   display: flex;
   flex-direction: column;
@@ -703,8 +683,6 @@ h5 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 900px) {
@@ -714,13 +692,8 @@ h5 {
 }
 }
 
-.method-container img {
-  max-width: 220px;
-}
-
 .method-container ul {
   margin-left: 24px;
-  margin-right: 20px;
   padding: 0;
 }
 
@@ -786,51 +759,12 @@ h5 {
   flex-grow: 1;
 }
 
-.photos {
-  padding-top: 50px;
-  display: flex;
-  flex-direction: row;
-  flex: wrap;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.photos img {
-  max-width: 300px;
-  height: auto;
-}
-
-.tools, .collaborators {
-  padding-top: 30px;
-  font-weight: 300;
-}
-
-.collaborators {
-  float:left;
-}
 
 .bottom-space {
   height: 120px;
 }
-.cash-photos {
-  padding-right: 50px;
-}
 
 
-@media screen and (max-width: 1000px) {
-  .cash-photos img{
-    padding-top: 10px;
-    padding-right: 20px;
-    max-width: 350px;
-  }
-}
-
-@media screen and (min-width: 1001px) {
-  .cash-photos img {
-    padding-top: 80px;
-    max-width: 250px;
-  }
-}
 
 .hmw {
   margin: 0;
@@ -862,18 +796,6 @@ h5 {
 }
 
 
-.suzuki-button {
-  background-color: #FFFFFF;
-  border: 3px black solid;
-  border-radius: 28px;
-  padding: 10px 40px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 40px;
-}
 
 @media screen and (max-width: 800px) {
   .bio{
@@ -968,7 +890,7 @@ h5 {
 
 }
 
-/* lightbox */
+/* lightbox
 
 .modal {
   display: none;
@@ -1066,3 +988,5 @@ img.hover-shadow {
   background-color: gray;
   opacity: 0.5;
 }
+
+*/
