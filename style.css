@@ -258,7 +258,13 @@ p {
 
 @media screen and (min-width: 769px) {
   .selected{
-    margin-top: 50px;
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .selected{
+    margin-top: 60px;
   }
 }
 
@@ -278,7 +284,8 @@ p {
 
 @media screen and (max-width: 768px) {
   .selected-buttons{
-      justify-content: center;
+    padding-top: 10px;
+    justify-content: center;
   }
 }
 
@@ -339,6 +346,7 @@ p {
 
 a {
   color: #000000;
+  text-decoration: none;
 }
 
 
@@ -777,41 +785,6 @@ h6 { /* image caption */
 
 }
 
-.case-photos{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  list-style: none;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.case-photos img {
-  max-width: 180px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-
-@media screen and (max-width: 800px) {
-  .bio{
-    padding-bottom: 50px;
-    font-weight: 300;
-    max-width: 350px;
-  }
-}
-
-@media screen and (min-width: 801px) {
-  .bio {
-    padding-bottom: 50px;
-    font-weight: 300;
-    max-width: 500px;
-  }
-}
 
 .reviews {
   display: flex;
@@ -825,17 +798,8 @@ h6 { /* image caption */
 
 .review {
   width: 350px;
-
 }
 
-.bio a{
-  font-weight: 500;
-}
-
-.bio a:hover{
-  color: #B77377;
-  text-decoration: none;
-}
 
 /* also centers other things lol */
 .about-container {
@@ -843,12 +807,10 @@ h6 { /* image caption */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .about-container img {
-  min-width: 100%
-
+  width: 100%
 }
 
 .about-container-container {
@@ -860,21 +822,6 @@ h6 { /* image caption */
   margin-bottom: 80px;
 }
 
-@media screen and (max-width: 650px) {
-.my-pic img {
-  max-width: 300px;
-  padding-bottom: 20px;
-}
-
-}
-
-@media screen and (min-width: 651px) {
-.my-pic img {
-  padding-bottom: 20px;
-  max-width: 250px;
-}
-
-}
 
 .logos {
   display: flex;
