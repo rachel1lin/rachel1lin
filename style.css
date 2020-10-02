@@ -358,7 +358,7 @@ h1, h2, h3, h4 {
 h1 { /* problem/opportunity */
   font-size: 20px;
   font-weight: 500;
-  display: inline;
+  
 }
 
 
@@ -398,7 +398,8 @@ h6 { /* image caption */
     font-weight: 300;
     text-align: center;
   }
-  ul {
+
+ul {
   list-style-image: url('tiny-bush.png');
     }
   }
