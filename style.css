@@ -358,7 +358,7 @@ h1, h2, h3, h4 {
 h1 { /* problem/opportunity */
   font-size: 20px;
   font-weight: 500;
-  
+
 }
 
 
@@ -474,6 +474,7 @@ ul {
 .banner img {
   max-width: 75%;
   margin-top: 30px;
+  height: auto;
 }
 }
 
@@ -481,6 +482,8 @@ ul {
 .banner img {
   max-width: 100%;
   margin-top: 60px;
+  height: auto;
+  width: auto;
 }
 
 }
