@@ -491,7 +491,7 @@ ul {
 
 @media screen and (max-width: 600px) {
 .banner img {
-  width: 100%;
+  max-width: 500px;
   margin-top: 60px;
   height: auto;
 }
