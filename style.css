@@ -478,6 +478,7 @@ ul {
 .banner {
   display: flex;
   justify-content: center;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 601px) {
