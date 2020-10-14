@@ -493,7 +493,7 @@ ul {
 .banner img {
   max-width: 500px;
   margin-top: 60px;
-  height: auto;
+  max-height: 200px;
 }
 
 }
