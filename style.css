@@ -33,13 +33,13 @@ body {
 
 @media screen and (min-width: 601px) {
   .set-width{
-    width: 55%;
+    width: 60%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .set-width {
-    width: 80%;
+    width: 95%;
   }
 }
 
@@ -69,7 +69,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .menu img {
-    width: 30px;
+    width: 50px;
   }
 }
 
@@ -115,13 +115,12 @@ body {
 /* Animation */
 p {
   font-family: 'Roboto Mono', monospace;
-  font-size: 16px;
+  font-size: inherit;
   border-right: solid 3px rgb(0,0,0);
-  animation: animated-text 1s steps(26,end) 1s 1 normal both,
-             animated-cursor 600ms steps(26,end) infinite;
+  animation: animated-text 1s steps(20,end) 1s 1 normal both,
+             animated-cursor 400ms steps(20,end) infinite;
   white-space: nowrap;
   overflow: hidden;
-  display: inline-block;
   margin-bottom: -5px;
 }
 
@@ -130,7 +129,7 @@ p {
 
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 127px;}
+  to{width: 440px;}
 }
 
 /* cursor animations */
@@ -141,16 +140,14 @@ p {
 }
 
 .welcome {
-  margin-top: 20px;
   border-color: #000000;
   border-style: solid;
   font-family: 'Roboto Mono', monospace;
+  font-weight: normal;
   padding: 30px;
   display: flex;
-  flex-direction: row;
-  align-self: center;
-  width: 100%;
-
+  margin: auto;
+  width: 95%;
 }
 
 .welcome img {
@@ -160,32 +157,32 @@ p {
 
 @media screen and (min-width: 701px) {
   .welcome img{
-    width: 100px;
+    width: 180px;
   }
 }
 
 @media screen and (max-width: 700px) {
   .welcome img {
-    width: 80px;
+    display: none;
   }
 }
 
 @media screen and (min-width: 701px) {
   .welcome{
-      font-size: 20px;
+      font-size: 28px;
+      margin-top: 180px;
+      margin-bottom: 180px;
   }
 }
 
 @media screen and (max-width: 700px) {
   .welcome{
       font-size: 16px;
+      margin-top: 150px;
+      margin-bottom: 150px;
   }
 }
 
-.flexbox-row {
-  display: flex;
-  flex-direction: row;
-}
 
 #ciscoBtn:hover ~ #ciscoBtnTriangle {
     display: block;
@@ -194,17 +191,7 @@ p {
 #ciscoBtnTriangle {
     display: none;
     position: absolute;
-    left: -40px;
-}
-
-#truhuBtn:hover ~ #truhuBtnTriangle {
-    display: block;
-}
-
-#truhuBtnTriangle {
-    display: none;
-    position: absolute;
-    left: -40px;
+    left: -50px;
 }
 
 #mayvBtn:hover ~ #mayvBtnTriangle {
@@ -214,7 +201,7 @@ p {
 #mayvBtnTriangle {
     display: none;
     position: absolute;
-    left: -40px;
+    left: -50px;
 }
 
 #playfitBtn:hover ~ #playfitBtnTriangle {
@@ -224,7 +211,17 @@ p {
 #playfitBtnTriangle {
     display: none;
     position: absolute;
-    left: -40px;
+    left: -50px;
+}
+
+#suzukiBtn:hover ~ #suzukiBtnTriangle {
+    display: block;
+}
+
+#suzukiBtnTriangle {
+    display: none;
+    position: absolute;
+    left: -50px;
 }
 
 .point-to {
@@ -237,72 +234,78 @@ p {
 
 @media screen and (min-width: 601px) {
   .point-to{
-      max-width: 275px;
+      max-width: 500px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .point-to{
-      max-width: 305px;
+  .point-to img{
+      width: 100%;
   }
 }
 
-.selected {
+
+.cover-container {
   display: flex;
   flex-direction: column;
-  font-size: 24px;
   font-family: 'Roboto Mono', monospace;
   font-weight: bold;
-  justify-content: center;
 }
 
-@media screen and (min-width: 769px) {
-  .selected{
-    margin-top: 120px;
-  }
+.cover-container a {
+  text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-  .selected{
-    margin-top: 60px;
-  }
+.cover-container a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
-.selected-buttons {
+.cover-container img{
+  max-width: 500px;
+}
+
+.flexbox-row {
   display: flex;
-  flex-wrap: wrap;
-  margin: 10px auto;
-  width: 100%;
-}
-
-@media screen and (min-width: 769px) {
-  .selected-buttons{
-      padding-top: 20px;
-      justify-content: space-around;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .selected-buttons{
-    padding-top: 10px;
-    justify-content: center;
-  }
-}
-
-.selected-buttons img {
-  margin: 15px auto;
-
+  margin: auto;
 }
 
 @media screen and (min-width: 601px) {
-  .selected-buttons img {
-      max-width: 250px;
+  .flexbox-row{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin-bottom: 50px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .selected-buttons img{
-      max-width: 300px;
+  .flexbox-row{
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 95%;
+      margin-bottom: 80px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 601px) {
+  .description{
+    max-width: 80%;
+    font-size: 20px;
+    font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .description{
+    max-width: 80%;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 20px;
   }
 }
 
@@ -409,6 +412,12 @@ h6 { /* image caption */
     text-align: center;
   }
 
+h7 {
+  font-size: 60px;
+  font-weight: bold;
+  display: block;
+}
+
 ul {
   list-style-image: url('tiny-bush.png');
     }
@@ -491,9 +500,9 @@ ul {
 
 @media screen and (max-width: 600px) {
 .banner img {
-  max-width: 500px;
+  max-width: 580px;
   margin-top: 60px;
-  max-height: 200px;
+  max-height: 250px;
 }
 
 }
