@@ -350,6 +350,7 @@ p {
 a {
   text-decoration: underline;
   color: inherit;
+  display: inline;
 }
 
 a:hover {
