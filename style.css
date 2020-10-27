@@ -171,7 +171,7 @@ p {
   .welcome{
       font-size: 28px;
       margin-top: 180px;
-      margin-bottom: 180px;
+      margin-bottom: 40px;
   }
 }
 
@@ -250,6 +250,7 @@ p {
   flex-direction: column;
   font-family: 'Roboto Mono', monospace;
   font-weight: bold;
+  margin-top: 180px;
 }
 
 .cover-container a {
@@ -750,38 +751,41 @@ ul {
 }
 
 
-/* also centers other things lol */
+@media screen and (min-width: 601px) {
+.about-container{
+  flex-direction: row;
+  width: 80%;
+}
+}
+
+@media screen and (max-width: 600px) {
+.about-container {
+  flex-direction: column-reverse;
+  width: 95%;
+}
+}
+
 .about-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  margin: auto;
 }
+
 
 .about-container img {
-  width: 100%
-}
-
-.about-container-container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 80px;
+  width: 80%;
 }
 
 
 .logos {
   display: flex;
   flex-direction: row;
+
 }
 
 .logos img{
   width: 45px;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-right: 10px;
+
 
 
 }
