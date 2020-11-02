@@ -224,6 +224,12 @@ p {
     left: -50px;
 }
 
+#cookingBtnTriangle {
+    display: none;
+    position: absolute;
+    left: -50px;
+}
+
 .point-to {
   display: flex;
   flex-direction: row-reverse;
@@ -346,6 +352,10 @@ p {
   height: 8px;
   background: #989898;
   width: 0%;
+}
+
+#not-allowed {
+  cursor: not-allowed;
 }
 
 a {
