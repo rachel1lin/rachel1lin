@@ -764,7 +764,7 @@ ul {
 @media screen and (min-width: 601px) {
 .about-container{
   flex-direction: row;
-  width: 80%;
+  width: 70%;
 }
 }
 
@@ -777,13 +777,14 @@ ul {
 
 .about-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: auto;
 }
 
 
 .about-container img {
-  width: 80%;
+  max-width: 50%;
+  margin-right: 30px;
 }
 
 
