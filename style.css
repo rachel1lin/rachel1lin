@@ -142,15 +142,16 @@ p {
 
 
 .welcome {
-  border-color: #000000;
+  border-color: #3b3b3b;
   border-style: solid;
+  border-radius: 1px;
   font-family: 'Roboto Mono', monospace;
   font-weight: normal;
   padding: 30px;
   display: flex;
   align-items: center;
   margin: auto;
-  width: 95%;
+  width: 97%;
 }
 
 .welcome img {
@@ -181,7 +182,7 @@ p {
 @media screen and (max-width: 700px) {
   .welcome{
       font-size: 16px;
-      margin-top: 150px;
+      margin-top: 230px;
       margin-bottom: 150px;
   }
 }
@@ -507,7 +508,7 @@ ul {
 
 @media screen and (min-width: 601px) {
 .banner img {
-  max-width: 75%;
+  max-width: 97%;
   margin-top: 30px;
   height: auto;
 }
@@ -766,40 +767,44 @@ ul {
 
 @media screen and (min-width: 601px) {
 .about-container{
-  flex-direction: row;
-  width: 70%;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
 }
 }
 
 @media screen and (max-width: 600px) {
 .about-container {
   flex-direction: column-reverse;
+  justify-content: center;
   width: 95%;
 }
 }
 
 .about-container {
   display: flex;
-  justify-content: center;
   margin: auto;
 }
 
 
 .about-container img {
-  max-width: 50%;
-  margin-right: 30px;
+  max-width: 40%;
+  max-height: 500px;
 }
 
 
 .logos {
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
-
+  justify-content: space-around;
+  width: 20%;
+  margin: auto;
 }
 
 .logos img{
-  width: 45px;
+  width: 50px;
+  margin-top: 50px;
 }
 
 /* lightbox
