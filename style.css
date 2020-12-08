@@ -6,7 +6,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
-  background-color: #FAFAFA;
+  background-color: #F9F9F9;
   background-image: url("bush.png");
   background-position: center bottom;
   background-size: 60px;
@@ -174,8 +174,8 @@ p {
 @media screen and (min-width: 701px) {
   .welcome{
       font-size: 28px;
-      margin-top: 180px;
-      margin-bottom: 40px;
+      margin-top: 220px;
+      margin-bottom: 80px;
   }
 }
 
