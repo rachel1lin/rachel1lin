@@ -140,6 +140,45 @@ p {
   to{border-right-color: transparent;}
 }
 
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
 
 .welcome {
   border-color: #3b3b3b;
@@ -151,7 +190,7 @@ p {
   display: flex;
   align-items: center;
   margin: auto;
-  width: 97%;
+  width: 81%;
 }
 
 .welcome img {
@@ -161,7 +200,7 @@ p {
 
 @media screen and (min-width: 701px) {
   .welcome img{
-    width: 180px;
+    width: 150px;
   }
 }
 
@@ -174,7 +213,7 @@ p {
 @media screen and (min-width: 701px) {
   .welcome{
       font-size: 28px;
-      margin-top: 220px;
+      margin-top: 200px;
       margin-bottom: 80px;
   }
 }
