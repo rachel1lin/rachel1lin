@@ -8,8 +8,10 @@
     <link rel="icon" type="png" href="assets/img/favicon.jpeg"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -18,19 +20,22 @@
 
 	<body>
     <div class="menu">
-      <a id = "my-name" href = "index.html">
-        <img src= "house.png">
-      </a>
-        <div class = "my-pages">
-          <a id = "page" href = "about.html"> About </a>
-          <a id = "page" href = "https://drive.google.com/file/d/1TA_0DLwJ_gc49gHMUeHDFoUixG-HZQ_a/view?usp=sharing" target="_blank"> Resume </a>
-        </div>
+      <div class="home">
+      <a id = "page" href = "index.html"> Home </a>
       </div>
+      <div class="my-pages">
+        <a id = "page" href = "about.html"> About </a>
+        <a id = "page" href = "https://drive.google.com/file/d/1TA_0DLwJ_gc49gHMUeHDFoUixG-HZQ_a/view?usp=sharing" target="_blank"> Resume </a>
+      </div>
+    </div>
+    <hr>
 
-      <div class="space"></div>
-      <div class="banner">
-        <img src="cooking-banner.png">
+    <div class="hero">
+        <img src="cooking-banner.png" alt="recipes + vui personal project">
+        <div class="center-text animated animatedFadeInUp fadeInUp">
+        <h1>Recipes + VUI</h1>
       </div>
+    </div>
 
     <div class="set-width">
       <div class="page-container">
@@ -43,8 +48,9 @@
             </div>
 
             <div class="case">
-              <h4> Is conversation design the right fit? </h4>
-              Checklist from the Google Design Guidelines.
+              <h4> Is conversation design the right fit?  </h4>
+              Throughout the project, I followed the Google Design Guidelines for conversation design. To see if conversation
+              design was the right solution for this problem, I made sure the majority of the checklist was fulfilled by the project scope. <br>
               <br>
               ✓ Users already have human-to-human conversations about this task or topic.
               <br>
@@ -117,8 +123,10 @@
             The standard flow is ideal for the basic chef walking through each step of the recipe. It's not enforced that users have to follow this flow and thus,
             advanced chefs can use the voice assistant questions about specific ingredients at any time. Users can also ask for a list of ingredients.
           </div>
+          <div class="space">
         </div>
       </div>
+    </div>
 
       <div class="banner">
         <img src="cooking_flow.png">
@@ -127,18 +135,94 @@
       <div class="set-width">
         <div class="page-container">
           <div class="case">
-            <h4> In Progress </h4>
+  <!---          <h4> In Progress </h4>
+
             <ul>
               <li> TTS prototpying </li>
               <li> reflections</li>
-            </ul>
+            </ul>--->
 
         </div>
       </div>
     </div>
-  <div class="bottom-space"></div>
+    <div class="space">
+    <div class="line"></div>
+    <div class="footer">
+      <div class="links">
+        <h3><b> Copy/Paste</b> </h3>
+        <a href="mailto:rachel1lin@berkeley.edu"> Email</a>
+      </div>
 
+        <div class="links">
+          <h3><b> Let's link!</b> </h3>
+          <a href="https://www.linkedin.com/in/rachel1lin/" target="_blank"> Linkedin </a>
+          <a href="https://www.instagram.com/rachel1lin/" target="_blank"> Instagram </a>
+          <a href="https://www.behance.net/rachel1lin" target="_blank"> Behance </a>
+        </div>
 
+        <div class="links" >
+          <h3> <b>UI/UX </b></h3>
+          <a href="mayv.html"> Mayv </a>
+          <a href="cisco.html"> Cisco </a>
+        </div>
+
+        <div class="links" >
+          <h3> <b>Conversation Design </b></h3>
+          <a href="cooking-vui.html"> Recipes + VUI </a>
+          <a href="suzuki.html"> Suzuki </a>
+        </div>
+
+        <div class="links">
+          <h3> <b>:^) </b></h3>
+          © Rachel Lin, 2021
+        </div>
+
+  </div>
+
+<script>
+$(document).ready(function() {
+
+// Add class to mailto link
+// Needed to separate the disabling of the default action AND copy email to clipboard
+$('a[href^=mailto]').addClass('mailto-link');
+
+var mailto = $('.mailto-link');
+var messageCopy = 'Click to copy email address';
+var messageSuccess = 'Email address copied to clipboard';
+
+mailto.append('<span class="mailto-message"></span>');
+$('.mailto-message').append(messageCopy);
+
+// Disable opening your email client. yuk.
+$('a[href^=mailto]').click(function() {
+  return false;
+})
+
+// On click, get href and remove 'mailto:' from value
+// Store email address in a variable.
+mailto.click(function() {
+  var href = $(this).attr('href');
+  var email = href.replace('mailto:', '');
+  copyToClipboard(email);
+  $('.mailto-message').empty().append(messageSuccess);
+  setTimeout(function() {
+    $('.mailto-message').empty().append(messageCopy);}, 2000);
+});
+
+});
+
+// Grabbed this from Stack Overflow.
+// Copies the email variable to clipboard
+function copyToClipboard(text) {
+  var dummy = document.createElement("input");
+  document.body.appendChild(dummy);
+  dummy.setAttribute('value', text);
+  dummy.select();
+  document.execCommand('copy');
+  document.body.removeChild(dummy);
+}
+
+</script>
 
 
 

@@ -8,8 +8,10 @@
     <link rel="icon" type="png" href="assets/img/favicon.jpeg"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -26,18 +28,20 @@
     <a id="btp-button"></a>
 
     <div class="menu">
-      <a id = "my-name" href = "index.html">
-        <img src= "house.png">
-      </a>
+      <div class="home">
+      <a id = "page" href = "index.html"> Home </a>
+      </div>
       <div class="my-pages">
         <a id = "page" href = "about.html"> About </a>
         <a id = "page" href = "https://drive.google.com/file/d/1TA_0DLwJ_gc49gHMUeHDFoUixG-HZQ_a/view?usp=sharing" target="_blank"> Resume </a>
       </div>
     </div>
-
-    <div class="space"></div>
-    <div class="banner">
+    <hr>
+    <div class="hero">
         <img src="mayv-banner.png" alt="mayv spring 2020">
+        <div class="center-text animated animatedFadeInUp fadeInUp">
+        <h1>Mayv</h1>
+      </div>
     </div>
 
     <div class = "set-width">
@@ -48,10 +52,9 @@
             project in the healthcare industry. Of course, COVID-19 struck mid-way through the semester,
             resulting in a transition to remote work, which called for some improvising and adapting.
             <br><br>
-            Our client saw that patients with chronic pain exhausted all known chronic pain solutions and are at a loss as to what to do.
-            Their solution was to build a mobile app to host a cognitive behavioral therapy (CBT), mindfulness training program, and other resource
-            while also introducing patients to alternative medicine and CBD topicals.
-            My team's task was to conduct research and design the experience for an MVP.
+            <span>Our client saw that patients with chronic pain exhausted all known chronic pain solutions and are at a loss as to what to do.
+            Their solution was to build a mobile app to host a <b>mindfulness training program, inclusive community, and other resources</b>
+            while also introducing patients to alternative medicine and CBD topicals.</span>
            </div>
 
            <div class="case">
@@ -61,7 +64,7 @@
              <br><br>
            </div>
 
-          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="600" height="700"
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="700" height="600"
             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F16Fi3WqGbJCpivTzVx6vAS%2FConsolidated-Hi-Fidelity-Screens%3Fnode-id%3D1%253A612%26viewport%3D-1121%252C122%252C0.12010417133569717%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen>
           </iframe>
 
@@ -74,24 +77,19 @@
               <br><br>
               Here are some pain points and other insights to help understand the user and how they live with chronic conditions:
               <br><br>
-              <ul>
-                <li> There is a lot of fear and/or anxiety around flare-ups. Stress and weather are common triggers. </li>
-                <br>
+              <span><ul>
+                <li> There is <b>a lot of fear and/or anxiety around flare-ups</b>. Stress and weather are common triggers. </li>
                 <li> Many users continuously do extensive research about their condition and different treatments. They deeply read journal articles,
-                  scientific research, and medical websites. </li>
-                <br>
+                  scientific research, and medical websites. <b>Knowledge is power over their condition.</b> </li>
+                <li> Users expected the technology to <b>generate insights and tell them patterns or information</b> they might have missed. </li>
                 <li> Online communities, like Facebook groups and subreddits, are places where they can listen to first-hand experiences and
                   receive true empathy. Sometimes family members do not truly understand what they are going through. </li>
-                <br>
                 <li> Most users think practicing mindfulness is for depression and anxiety and are not aware of how it can be applied to chronic pain.</li>
-                <br>
                 <li> Users are forced to adapt their lifestyle to their condition and largely choose to stay at home,
                   where they can control their environment. </li>
-                <br>
                 <li> Since CBD is not legal on a federal level and access is limited in some states, some users were apprehensive towards it as an alternative medicine, but
                   some are willing to try anything that will help. </li>
-                <br>
-              </ul>
+              </ul></span>
 
             <h2> Literature </h2>
             Because the goal of the app is to approach health holistically, my team also did the same in our research.
@@ -101,18 +99,15 @@
               <li> Here are a couple of ways to design for mindfulness that guided my thoughts as I designed:
                 value human attention, discourage addictive usage, and minimize social anxiety.
               <a href="https://www.designingmindfulness.com/">Source</a></li>
-              <br>
               <li>“Patients preferred easy tap user interfaces to multitap or slider methods, and vertical question layout...
               Patients liked to be engaged by progress feedback reports and educational tips...found a trended outcome summary
               report helpful which provides more precise details on whether and how the symptoms are changing over time.”
               <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5994956/">Source</a></li>
-              <br>
               <li> “The progress line charts were also thought to work well as they show “a trend of symptoms over time-getting better or worse.”
               Participants also liked to see comparative data, such as month to month, “my knee pain in this month is better than last month.”
               And some participants would like the app to be able to drill down to specific data points and allow users to add notes to provide a
               better understanding of the circumstances that lead to major fluctuations."
               <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5994956/">Source</a></li>
-              <br>
               <li>In an experiment co-designed by RA patients, users expected "(1) a calendar feature for goal setting, planning, and recording
                 of physical activity performance and progress, and
                 (2) a small community feature for positive feedback and support from peers."
@@ -126,27 +121,25 @@
 
           <div class="case">
             <h4> Framing the Problem </h4>
-            With the new onslaught of knowledge, it was overwhelming how many directions we could go and designs we could explore.
-            Thus, my team and I held a framing workshop with our client to clarify our deliverable and
-            identify the scope of the mobile app.
+            <span>With the new onslaught of knowledge, it was overwhelming how many directions we could go and designs we could explore.
+            Thus, my team and I held <b>a framing workshop with our client to clarify our deliverable and
+            identify the scope of the mobile app.</b></span>
             <br><br>
             While our problem statement still came out long and vague, this was an effective way to communicate in order for both parties
             to be on the same page. Through this framing workshop, we were able to better meld client expectations and user needs
             discovered through our research.
             <br><br>
             <h2> Problem Statement </h2>
-            <div class="row-container">
+            <div class="row-container opportunities">
               <div class="rectangle"></div>
-              <div class="problem-statement">
-                How might we create <u>a supportive, empathetic, realistic but optimistic environment [for patients] that pairs education with community</u>
-                to guide chronic pain patients through the ups and downs of their condition?
-              </div>
+                <span>How might we create <u>a supportive, empathetic, realistic but optimistic environment [for patients] that pairs education with community</u>
+                to guide chronic pain patients through the ups and downs of their condition?</span>
             </div>
           </div>
 
 
           <div class="case">
-            <h4> Ideation </h4>
+            <h4> Initial Round of Ideation </h4>
             As a team, we invited our clients to brainstorm with us a list of interactions that helped to address pain points
             found in our the research. Then, we grouped them by common denominators.
 
@@ -163,13 +156,14 @@
             that was welcoming and friendly in order to encourage users to further
             pursue community and knowledge. Users tended to be very well-read in their conditions and we wanted this app to make their journey of discovery and
             experimentation easier.-->
-            My team and I created this more specific problem map to encompass all of the user's different needs and take into account
+            <span>My team and I created this more specific problem map to encompass all of the user's different needs and take into account
             multiple perspectives of our overarching problem. We then grouped all the opportunities and divided them into different features of the mobile app.
-            This analysis method allowed us to prioritize which features and interactions to design for the minimum viable product.
-            I've underlined the opportunities for the features I was responsible for: Health Tracking.
+            This analysis method allowed us to <b>prioritize which features and interactions to design for the minimum viable product</b>.
+            I've underlined the opportunities for the features I was responsible for: Health Tracking.<span>
           </div>
         </div>
       </div>
+      <div class="space"></div>
 
       <div class="banner">
         <img src="mayv_problemmap.png">
@@ -185,17 +179,17 @@
             Below are the early iterations.
 
             <h2> Calendar View </h2>
-            Because there is a lot of fear and anxiety about flare-ups,
+            <span>Because there is a lot of fear and anxiety about flare-ups,
             I chose to start with a weekly view in order for users to see the days leading up to
-            flare-up. Users would be able to easily sort through each day they logged their symptoms and
-            draw their own inferences from the data.
+            flare-up. Users would be able to <b>easily sort through each day, week, or month</b> they logged their symptoms and
+            draw their own inferences from the data.</span>
 
-            <h2> Symptom Logging </h2>
-            Users preferred easy tap user interfaces over writing in their symptoms, so I designed buttons with
+            <h2> Health Insights </h2>
+            <span>Users preferred easy tap user interfaces over writing in their symptoms, so I designed buttons with
             suggested words. If a word was not there, users had the option of customizing their own. Users liked to be
-            aware of their progress, so I chose to design a sliding
-            progress chart within symptom logging so that users could compare the feeling of today against the feelings of the days prior.
-            Because users prefer not to slide, the chart can also be tapped.
+            aware of their progress, so I chose to design <b>a sliding
+            progress chart</b> within symptom logging so that users could <b>compare the feeling of today against the feelings of the days prior</b>.
+            Because users prefer not to slide, the chart can also be tapped.</span>
             <br><br>
 
             <img src="mayv_midfi.png">
@@ -203,15 +197,15 @@
           </div>
 
           <div class="case">
-            <h4> Health Logs in Hi-fi </h4>
-            Our style guide was led by another teammate with the rest of us coming together to bounce ideas off of each other
+            <h4> Calendar in Hi-fi </h4>
+            <span>Our style guide was led by another teammate with the rest of us coming together to bounce ideas off of each other
             and represent our features' interactions.
-            We were given a font and colors to work with by the branding agency our client worked with. With those, we expanded
-            the style guide to adapt to a mobile app (i.e. typography, hierarchy, spacing, etc). Then, I applied the style guide accordingly.
+            We were given a font and colors to work with by the branding agency our client worked with. With those, we <b>expanded
+            the style guide to adapt to a mobile app </b>(i.e. typography, hierarchy, spacing, etc). Then, I applied the style guide accordingly.
             <br><br>
             After multiple rounds of design critiques with my team lead and the clients, I made a handful of changes
-            to the designs.
-            <br><br>
+            to the designs.</span>
+            <br>
             <ul>
               <li> Removed the second dot on top on the calendar days. Was not clear that that
                 stood for flare-ups.</li>
@@ -225,6 +219,7 @@
         </div>
       </div>
     </div>
+    <div class="space">
 
     <div class="banner">
       <img src="mayv_calendar.png">
@@ -235,19 +230,21 @@
           <div class="case">
 
             <h4> Health Insights in Hi-fi </h4>
-            Since our goal was to create a comprehensive tool and resource for users with chronic conditions,
-            I wanted to empower users to compare their data and progress. In our research, users were predominantly
+            <span>Since our goal was to create a comprehensive tool and resource for users with chronic conditions,
+            I wanted to empower users to <b>compare their data and progress</b>. In our research, users were predominantly
             very meticulous about their tracking (i.e. wrote diaries, annotated calendars) or only tracked sometimes.
             The graph is pretty simple and will show the respective line when the x-axis option is selected below.
             Originally, I wanted to add AI-generated insights like many health apps do.
             One user's story particularly stood out to me - she stopped tracking because seeing a lack of progress
-            was depressing. My intention for this tool was to be more objective rather than encouraging. Encouragement
+            was depressing. My intention for this tool was to <b>be more objective rather than encouraging</b>. Encouragement
             coming from the app can seem false when chronic conditions can be unpredictable. The graph can also
-            be useful when users bring this tool to the doctor.
+            be useful when users bring this tool to the doctor.</span>
 
           </div>
+          <div class="space">
         </div>
       </div>
+    </div>
 
     <div class="banner">
       <img src="mayv_insights.png">
@@ -267,10 +264,7 @@
 
           <div class="case">
             <h4> Predicted Impact </h4>
-            <ul>
-              <li> Increased engagement with the app measured by consistent daily usage to log symptoms</li>
-              <li> Reduced cognitive load for user measured by qualitative data from reviews</li>
-            </ul>
+            <img src="mayv_impact.png">
           </div>
 
           <div class="case">
@@ -295,9 +289,39 @@
           </div>
          </div>
        </div>
+       <div class="space"></div>
+       <div class="line"></div>
+       <div class="footer">
+         <div class="links">
+           <h3><b> Copy/Paste</b> </h3>
+           <a href="mailto:rachel1lin@berkeley.edu"> Email</a>
+         </div>
 
+           <div class="links">
+             <h3><b> Let's link!</b> </h3>
+             <a href="https://www.linkedin.com/in/rachel1lin/" target="_blank"> Linkedin </a>
+             <a href="https://www.instagram.com/rachel1lin/" target="_blank"> Instagram </a>
+             <a href="https://www.behance.net/rachel1lin" target="_blank"> Behance </a>
+           </div>
 
-  <div class="bottom-space">
+           <div class="links" >
+             <h3> <b>UI/UX </b></h3>
+             <a href="mayv.html"> Mayv </a>
+             <a href="cisco.html"> Cisco </a>
+           </div>
+
+           <div class="links" >
+             <h3> <b>Conversation Design </b></h3>
+             <a href="cooking-vui.html"> Recipes + VUI </a>
+             <a href="suzuki.html"> Suzuki </a>
+           </div>
+
+           <div class="links">
+             <h3> <b>:^) </b></h3>
+             © Rachel Lin, 2021
+           </div>
+
+     </div>
   </div>
 
 <script>
@@ -325,6 +349,50 @@
     e.preventDefault();
     $('html, body').animate({scrollTop:0}, '300');
   });
+
+
+  $(document).ready(function() {
+
+  // Add class to mailto link
+  // Needed to separate the disabling of the default action AND copy email to clipboard
+  $('a[href^=mailto]').addClass('mailto-link');
+
+  var mailto = $('.mailto-link');
+  var messageCopy = 'Click to copy email address';
+  var messageSuccess = 'Email address copied to clipboard';
+
+  mailto.append('<span class="mailto-message"></span>');
+  $('.mailto-message').append(messageCopy);
+
+  // Disable opening your email client. yuk.
+  $('a[href^=mailto]').click(function() {
+    return false;
+  })
+
+  // On click, get href and remove 'mailto:' from value
+  // Store email address in a variable.
+  mailto.click(function() {
+    var href = $(this).attr('href');
+    var email = href.replace('mailto:', '');
+    copyToClipboard(email);
+    $('.mailto-message').empty().append(messageSuccess);
+    setTimeout(function() {
+      $('.mailto-message').empty().append(messageCopy);}, 2000);
+  });
+
+});
+
+// Grabbed this from Stack Overflow.
+// Copies the email variable to clipboard
+function copyToClipboard(text) {
+    var dummy = document.createElement("input");
+    document.body.appendChild(dummy);
+    dummy.setAttribute('value', text);
+    dummy.select();
+    document.execCommand('copy');
+    document.body.removeChild(dummy);
+}
+
 
   </script>
 

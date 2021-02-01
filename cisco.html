@@ -8,8 +8,10 @@
     <link rel="icon" type="png" href="assets/img/favicon.jpeg"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -29,19 +31,20 @@
     <a id="btp-button"></a>
 
     <div class="menu">
-      <a id = "my-name" href = "index.html">
-        <img src= "house.png">
-      </a>
+      <div class="home">
+      <a id = "page" href = "index.html"> Home </a>
+      </div>
       <div class="my-pages">
         <a id = "page" href = "about.html"> About </a>
         <a id = "page" href = "https://drive.google.com/file/d/1TA_0DLwJ_gc49gHMUeHDFoUixG-HZQ_a/view?usp=sharing" target="_blank"> Resume </a>
       </div>
     </div>
-
-    <div class="space"></div>
-
-    <div class="banner">
+    <hr>
+    <div class="hero">
         <img src="cisco-banner.png" alt="cisco summer 2019">
+        <div class="center-text animated animatedFadeInUp fadeInUp">
+        <h1>Cisco</h1>
+      </div>
     </div>
 
   <div class = "set-width">
@@ -74,8 +77,6 @@
             <div class="rectangle"></div>
             Research, design, and prototype a mobile app to improve how clients consume product support.
           </div>
-
-
           Because the CP was an unreleased product at the time, it was necessary to collect preliminary data that would allow us
           to do some needfinding and discover the latent needs and opportunities where a mobile app can fill in gaps for the user.
           </div>
@@ -116,12 +117,11 @@
           </div>
 
           With the insights from our research coupled with our given task, I devised this problem statement to focus our solutions.
+          <div class="space"></div>
             <h2>Problem Statement</h2>
-            <div class="row-container">
+            <div class="row-container opportunities">
               <div class="rectangle"></div>
-              <div class="problem-statement">
-                How might we expand our current web platform to mobile so we can <u>improve network engineers' accessibility</u> to the CP?
-              </div>
+                How might we expand our current web platform to mobile so we can improve network engineers' accessibility to the CP?
             </div>
         </div>
 
@@ -136,11 +136,13 @@
             </div>
           </div>
           <h6>How to prioritize tasks, how to navigate, how to re-architect the IA, and possible mobile tasks </h6>
-          <br>
+        </div>
+        <div class="case">
           There were a number of possible user flows to explore. My co-intern Helen and I divided our work up by features (I took Home Page and Lifecycle)
           and each crafted a user story that incorporated our research insights and communicated the value our solutions brought to the user.
+          After considering the numerous flows and user needs, I constrained my project to focus on these key design opportunities.
 
-          <h2> Opportunites </h2>
+          <h2> Design Opportunities </h2>
           <div class="row-container">
             <div class= "rectangle">
             </div>
@@ -157,13 +159,15 @@
           </div>
         </div>
 
+
           <div class="case">
             <h4>User Journey </h4>
-            To better explain our user's behaviors, I wrote a user journey detailing the events of the average network engineer.
-            This story is based off the problem statement above and showcases how different solutions react to
-            the user, physically and within the app. This was especially helpful in narrowing down the scope of the the project and
-            allowed me to focus on a couple of ideas to flush out designs for.
+            To better understand and explain user behaviors, I wrote a user journey detailing the day-to-day of a network engineer.
+            This story incorporates the problem statement and showcases how a more accessible CP benefits
+            the user, physically and within the app. The user journey also helped focus on which user flows were key.
           </div>
+        </div>
+      </div>
 
           <div class ="userstory">
               <div class="story">
@@ -204,6 +208,11 @@
               </div>
             </div>
 
+
+      <div class = "set-width">
+        <div class="page-container">
+
+
           <div class="case">
             <h4> Design Solutions</h4>
             According to the user story, I anticipated these needs and chose three areas to tackle that would improve accessibility for the user:
@@ -223,6 +232,8 @@
           </div>
           </div>
         </div>
+
+          <div class="space"></div>
 
         <div class = "banner">
           <img src="lifecycle.png"></img>
@@ -244,6 +255,7 @@
         </div>
       </div>
 
+        <div class="space"></div>
     <div class="banner">
         <img src="webinar.png"></img>
     </div>
@@ -259,13 +271,16 @@
         </dib>
       </div>
     </div>
+      <div class="space"></div>
 
       <div class="banner">
         <img src="cisco_A.png" alt="drag and drop idea">
       </div>
+        <div class="space"></div>
       <div class="banner">
         <img src="cisco_B.png" alt="two filter idea - view all and starred">
       </div>
+        <div class="space"></div>
       <div class="banner">
         <img src="cisco_C.png" alt="data visualizations and highlights">
       </div>
@@ -281,10 +296,8 @@
           </div>
 
           <div class="case">
-            <h4> Impact </h4>
-            <ul>
-              <li> Greater user and support team satisfaction measured by decrease in TAC cases and support team feedback</li>
-            </ul>
+            <h4> Predicted Impact </h4>
+            <img src="cisco_impact.png">
           </div>
 
           <div class="case">
@@ -321,8 +334,40 @@
             <h6> Fun at the Cisco Live! post-conference concert! </h6>
           </div>
       </div>
-      <div class="bottom-space">
-  </div>
+    </div>
+    <div class="space"></div>
+      <div class="line"></div>
+      <div class="footer">
+        <div class="links">
+          <h3><b> Copy/Paste</b> </h3>
+          <a href="mailto:rachel1lin@berkeley.edu"> Email</a>
+        </div>
+
+          <div class="links">
+            <h3><b> Let's link!</b> </h3>
+            <a href="https://www.linkedin.com/in/rachel1lin/" target="_blank"> Linkedin </a>
+            <a href="https://www.instagram.com/rachel1lin/" target="_blank"> Instagram </a>
+            <a href="https://www.behance.net/rachel1lin" target="_blank"> Behance </a>
+          </div>
+
+          <div class="links" >
+            <h3> <b>UI/UX </b></h3>
+            <a href="mayv.html"> Mayv </a>
+            <a href="cisco.html"> Cisco </a>
+          </div>
+
+          <div class="links" >
+            <h3> <b>Conversation Design </b></h3>
+            <a href="cooking-vui.html"> Recipes + VUI </a>
+            <a href="suzuki.html"> Suzuki </a>
+          </div>
+
+          <div class="links">
+            <h3> <b>:^) </b></h3>
+            © Rachel Lin, 2021
+          </div>
+
+    </div>
 
 
 
@@ -351,6 +396,50 @@
     e.preventDefault();
     $('html, body').animate({scrollTop:0}, '300');
   });
+
+  $(document).ready(function() {
+
+  // Add class to mailto link
+  // Needed to separate the disabling of the default action AND copy email to clipboard
+  $('a[href^=mailto]').addClass('mailto-link');
+
+  var mailto = $('.mailto-link');
+  var messageCopy = 'Click to copy email address';
+  var messageSuccess = 'Email address copied to clipboard';
+
+  mailto.append('<span class="mailto-message"></span>');
+  $('.mailto-message').append(messageCopy);
+
+  // Disable opening your email client. yuk.
+  $('a[href^=mailto]').click(function() {
+    return false;
+  })
+
+  // On click, get href and remove 'mailto:' from value
+  // Store email address in a variable.
+  mailto.click(function() {
+    var href = $(this).attr('href');
+    var email = href.replace('mailto:', '');
+    copyToClipboard(email);
+    $('.mailto-message').empty().append(messageSuccess);
+    setTimeout(function() {
+      $('.mailto-message').empty().append(messageCopy);}, 2000);
+  });
+
+});
+
+// Grabbed this from Stack Overflow.
+// Copies the email variable to clipboard
+function copyToClipboard(text) {
+    var dummy = document.createElement("input");
+    document.body.appendChild(dummy);
+    dummy.setAttribute('value', text);
+    dummy.select();
+    document.execCommand('copy');
+    document.body.removeChild(dummy);
+}
+
+
 
   </script>
 

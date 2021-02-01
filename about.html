@@ -5,11 +5,13 @@
   <head>
     <link rel="icon" href="zucker.png" type="image/gif" sizes="16x16">
     <title> Rachel Lin </title>
-    <link rel="stylesheet" href="animate.min.css">
+    <link rel="icon" type="png" href="assets/img/favicon.jpeg"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -19,21 +21,21 @@
 	<body>
 
     <div class="menu">
-      <a id = "my-name" href = "index.html">
-        <img src= "house.png">
-      </a>
+      <div class="home">
+      <a id = "page" href = "index.html"> Home </a>
+      </div>
       <div class="my-pages">
         <a id = "page" href = "about.html"> About </a>
         <a id = "page" href = "https://drive.google.com/file/d/1TA_0DLwJ_gc49gHMUeHDFoUixG-HZQ_a/view?usp=sharing" target="_blank"> Resume </a>
       </div>
     </div>
+    <hr>
 
-    <div class="space"></div>
-    <div class="space"></div>
-    <div class="space"></div>
     <div class="about-container animated animatedFadeInUp fadeInUp">
+      <div class="about-pic">
           <img src="me.jpg" alt="a picture of my face :)">
-          <div>
+        </div>
+          <div class="about-text">
           <h4>Rachel Lin [林安安] (she/her) </h4>
           <h2> About: </h2>
           I'm a self-taught product designer who graduated from UC Berkeley in May with a degree in Cognitive Science. Currently,
@@ -50,16 +52,43 @@
             <li> Apparently, I'm also a foodie - ask me about my oat milk, instant ramen, and strawberry greek yogurt rankings.</li>
           </ul>
           <br>
-          You don't have to like fishing to drop me a line! 🎣 rachel1lin@berkeley.edu
+          You don't have to like fishing to drop me a line! 🎣 <a href="mailto:rachel1lin@berkeley.edu">Email!</a>
         </div>
-    </div>
-    <div class="logos animated animatedFadeInUp fadeInUp">
-      <a href="https://www.behance.net/rachel1lin">
-        <img src="behance-logo.png" alt="Behance"></a>
-      <a href="https://linkedin.com/in/rachel1lin/">
-        <img src="linkedin-logo.png" alt="Linkedin"></a>
-    </div>
-      <div class="bottom-space"></div>
+      </div>
+
+
+    <div class="line"></div>
+    <div class="footer">
+      <div class="links">
+        <h3><b> Copy/Paste</b> </h3>
+        <a href="mailto:rachel1lin@berkeley.edu"> Email</a>
+      </div>
+
+        <div class="links">
+          <h3><b> Let's link!</b> </h3>
+          <a href="https://www.linkedin.com/in/rachel1lin/" target="_blank"> Linkedin </a>
+          <a href="https://www.instagram.com/rachel1lin/" target="_blank"> Instagram </a>
+          <a href="https://www.behance.net/rachel1lin" target="_blank"> Behance </a>
+        </div>
+
+        <div class="links" >
+          <h3> <b>UI/UX </b></h3>
+          <a href="mayv.html"> Mayv </a>
+          <a href="cisco.html"> Cisco </a>
+        </div>
+
+        <div class="links" >
+          <h3> <b>Conversation Design </b></h3>
+          <a href="cooking-vui.html"> Recipes + VUI </a>
+          <a href="suzuki.html"> Suzuki </a>
+        </div>
+
+        <div class="links">
+          <h3> <b>:^) </b></h3>
+          © Rachel Lin, 2021
+        </div>
+
+  </div>
       <!---  <div class="bottom-space"></div>
         <div class="set-width">
           <h4> Testimonials </h4>
@@ -90,7 +119,50 @@
             </div>
             <div class="bottom-space"></div>
 --->
+<script>
+$(document).ready(function() {
 
+// Add class to mailto link
+// Needed to separate the disabling of the default action AND copy email to clipboard
+$('a[href^=mailto]').addClass('mailto-link');
+
+var mailto = $('.mailto-link');
+var messageCopy = 'Click to copy email address';
+var messageSuccess = 'Email address copied to clipboard';
+
+mailto.append('<span class="mailto-message"></span>');
+$('.mailto-message').append(messageCopy);
+
+// Disable opening your email client. yuk.
+$('a[href^=mailto]').click(function() {
+  return false;
+})
+
+// On click, get href and remove 'mailto:' from value
+// Store email address in a variable.
+mailto.click(function() {
+  var href = $(this).attr('href');
+  var email = href.replace('mailto:', '');
+  copyToClipboard(email);
+  $('.mailto-message').empty().append(messageSuccess);
+  setTimeout(function() {
+    $('.mailto-message').empty().append(messageCopy);}, 2000);
+});
+
+});
+
+// Grabbed this from Stack Overflow.
+// Copies the email variable to clipboard
+function copyToClipboard(text) {
+  var dummy = document.createElement("input");
+  document.body.appendChild(dummy);
+  dummy.setAttribute('value', text);
+  dummy.select();
+  document.execCommand('copy');
+  document.body.removeChild(dummy);
+}
+
+</script>
 
 
 	</body>
