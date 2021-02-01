@@ -72,6 +72,7 @@ body {
 @media screen and (max-width: 600px) {
   #page {
     font-size: 14px;
+    padding: 20px;
   }
 }
 
@@ -90,10 +91,10 @@ body {
 .footer {
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
   margin: auto;
   padding: 20px 0px 30px 0px;
@@ -111,7 +112,9 @@ body {
 .links {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
+  padding: 10px;
 }
 
 .mailto-link:hover .mailto-message,
@@ -218,6 +221,7 @@ body {
 @media screen and (max-width: 700px) {
   .home-hero img {
     width:15%;
+    margin-top: 20px;
     border-left: 1px solid black;
     border-right: 1px solid black;
   }
@@ -231,13 +235,22 @@ body {
 
 @media screen and (max-width: 700px) {
   .home-hero{
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
-.home-text {
-  max-width: 40%;
+@media screen and (min-width: 701px) {
+  .home-text{
+    max-width: 40%;
+  }
 }
+
+@media screen and (max-width: 70px) {
+  .home-text{
+    max-width: 30%;
+  }
+}
+
 
 .cover-container {
   margin: auto;
@@ -692,6 +705,7 @@ ul {
 .about-container {
   flex-direction: column-reverse;
   justify-content: center;
+  margin: auto;
 }
 }
 
@@ -701,14 +715,34 @@ ul {
   border-left: 1px solid gray;
 }
 
-.about-pic {
- width: 40%;
+@media screen and (min-width: 601px) {
+.about-pic{
+  width: 40%;
+}
 }
 
-.about-text {
-  width: 50%;
-  padding: 30px;
+@media screen and (max-width: 600px) {
+.about-pic{
+  width: 100%;
 }
+}
+
+
+@media screen and (min-width: 601px) {
+  .about-text {
+    width: 50%;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-text {
+    margin: auto;
+    width: 95%;
+    padding: 30px;
+  }
+}
+
 
 /* lightbox
 
