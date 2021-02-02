@@ -106,8 +106,8 @@ body {
 }
 
 @media screen and (min-width: 601px) {
-  #.footer {
-      width: 70%;
+  .footer {
+      width: 95%;
   }
 }
 
@@ -246,9 +246,15 @@ body {
 
 @media screen and (max-width: 700px) {
   .home-hero{
-    padding-top: 20px;
+    padding: 40px;
     font-size: 20px;
   }
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
 }
 
 @media screen and (min-width: 701px) {
@@ -261,6 +267,25 @@ body {
   .home-text{
     max-width: 95%;
   }
+}
+
+.home-text img {
+  border: none;
+  align-self: center;
+  animation: float 3s ease-in-out infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
 
 
