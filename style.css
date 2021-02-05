@@ -219,13 +219,10 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid gray;
-  font-family: "Source Serif Pro", serif;
-  font-weight: bold;
-  cursor: url('face_cursor.png'), auto;
 }
 
 @media screen and (min-width: 701px) {
-  .home-hero img{
+  #gradient {
     width:20%;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
@@ -233,7 +230,7 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-  .home-hero img {
+   #gradient  {
     width:0%;
   }
 }
@@ -253,27 +250,35 @@ body {
 
 .home-text {
   display: flex;
-  flex-direction: column-reverse;
-  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Ubuntu", monospace;
+  font-weight: normal;
 }
 
 @media screen and (min-width: 701px) {
   .home-text{
-    max-width: 40%;
+    width: 80%;
+    padding: 50px;
   }
 }
 
 @media screen and (max-width: 700px) {
   .home-text{
-    max-width: 95%;
+    width: 95%;
   }
 }
 
 .home-text img {
   border: none;
-  align-self: center;
+  align-self: left;
   animation: float 3s ease-in-out infinite;
   margin-bottom: 10px;
+  width: 50%;
+  float: right;
 }
 
 @keyframes float {
@@ -330,7 +335,7 @@ body {
 }
 
 .left-text {
-  width: 40%;
+  width: 70%;
   display: flex;
   flex-direction: column-reverse;
 }
