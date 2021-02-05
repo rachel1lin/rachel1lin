@@ -352,29 +352,6 @@ body {
 }
 
 
-/* Style the header: fixed position (always stay at the top) */
-#header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: #DCDCDC;
-}
-
-/* The progress container (grey background) */
-.progress-container {
-  width: 100%;
-  height: 8px;
-  background: #F0F0F0;
-}
-
-/* The progress bar (scroll indicator) */
-.progress-bar {
-  height: 8px;
-  background: #989898;
-  width: 0%;
-}
-
 #not-allowed {
   cursor: not-allowed;
 }
@@ -419,7 +396,7 @@ h2 { /* gray sub-headline */
 h3 { /* enlarged standout text */
   display: inline;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 28px;
 }
 
@@ -508,7 +485,6 @@ ul {
   opacity: 1;
   visibility: visible;
 }
-
 
 
 .page-container {
@@ -711,25 +687,17 @@ ul {
   line-height: 30px;
 }
 
-/*.learning {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 20px;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}*/
-
-.gif img {
-  padding-bottom: 30px;
-  padding-top: 20px;
-  max-width: 230px
+.role {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  color: gray;
 }
 
-.text {
-  max-width: 300px;
-  flex-grow: 1;
+.role-column {
+  display: flex;
+  flex-direction: column;
 }
-
 
 .bottom-space {
   height: 120px;
