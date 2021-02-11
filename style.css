@@ -49,17 +49,16 @@ body {
 .menu {
   top: 0%;
   padding: 20px;
-  max-height: 80px;
+  height: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
   width: 100%;
   position: fixed;
-  background-color: #F9F9F9;
   border-bottom: 1px solid gray;
   z-index: 500;
+  background-color: inherit;
 }
 
 
@@ -219,6 +218,7 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid gray;
+  margin-top: 80px;
 }
 
 @media screen and (min-width: 701px) {
@@ -523,11 +523,11 @@ ul {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid gray;
-  border-top: 1px solid gray;
   position: relative;
   text-align: center;
   height: auto;
   object-fit: cover;
+  margin-top: 80px;
 }
 
 .hero img {
@@ -714,7 +714,7 @@ ul {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 35px;
+  margin-top: 80px;
 }
 }
 
